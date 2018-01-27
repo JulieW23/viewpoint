@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
+	private bool verticalMove = false; // is player vertical movement allowed
 
 	void Start() {
 		rb = GetComponent<Rigidbody> ();
@@ -30,11 +31,15 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetAxis ("Horizontal") < 0) {
 			transform.position += -transform.right * Time.deltaTime * movementSpeed;
 		}
-		if (Input.GetAxis ("Vertical") > 0) {
+		if (Input.GetAxis ("Vertical") > 0 && verticalMove) {
 			transform.position += transform.forward * Time.deltaTime * movementSpeed;
 		}
-		if (Input.GetAxis ("Vertical") < 0) {
+		if (Input.GetAxis ("Vertical") < 0 && verticalMove) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
+		}
+		// toggle vertical movement
+		if (Input.GetKeyDown (KeyCode.C)) {
+			verticalMove = !verticalMove;
 		}
 		// jump
 		if (grounded && Input.GetKeyDown(KeyCode.Space)) {
