@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 88309156}
   m_Layer: 0
   m_Name: InvisGround4
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 305605269}
   m_Layer: 0
   m_Name: InvisGround5
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 312824365}
   m_Layer: 0
   m_Name: InvisGround3
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -502,7 +502,7 @@ MeshCollider:
   m_GameObject: {fileID: 931060935}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 1079648786}
   m_Layer: 0
   m_Name: InvisGround1
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 1183442457}
   m_Layer: 0
   m_Name: InvisGround2
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -754,7 +754,7 @@ GameObject:
   - component: {fileID: 1446091660}
   m_Layer: 0
   m_Name: InvisGround2
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 1602319879}
   m_Layer: 0
   m_Name: InvisGround1
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1110,8 +1110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  jumpForce: 20
-  fallForce: 50
+  jumpForce: 23
+  fallForce: 5
+  lowJumpForce: 4
   fallThreshold: -80
 --- !u!1 &1751462918
 GameObject:
@@ -1140,7 +1141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6524c9cba8c184a97823708c5de9cc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode2d: 1
+  mode2d: 0
   camera2d: {fileID: 1489588565}
   camera3d: {fileID: 768252188}
 --- !u!4 &1751462920
@@ -1149,9 +1150,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751462918}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.29762, y: -19.4, z: 31.80001}
-  m_LocalScale: {x: 300.00012, y: 40, z: 100.00006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1169,7 +1170,7 @@ GameObject:
   - component: {fileID: 1857927294}
   m_Layer: 0
   m_Name: InvisGround1
-  m_TagString: InvisGround
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

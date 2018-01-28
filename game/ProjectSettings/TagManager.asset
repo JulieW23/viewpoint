@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - ColliderDiff
-  - InvisGround
   - Ground
   layers:
   - Default

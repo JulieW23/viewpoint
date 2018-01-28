@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	[Header("Control sensitivity")]
-	public float movementSpeed; // left right speed
+	public float movementSpeed;
 	public float jumpForce; // upward force applied to jump
 	public float fallForce; // downward force applied to falling
+	public float lowJumpForce; // jump adjustment force
 	//public float speed;
 
 	[Header("Other player settings")]
@@ -40,14 +41,17 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
 		}
+
 		// jump
 		if (grounded && Input.GetKeyDown(KeyCode.Space)) {
-			rb.AddForce (0, jumpForce, 0, ForceMode.Impulse);
+			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
 		}
 		// fall faster after jumping up
-		if(rb.velocity.y < 2){
-			rb.AddForce (Vector3.down * fallForce);
+		if (rb.velocity.y < 2) {
+			rb.velocity += Vector3.up * Physics.gravity.y * fallForce * Time.deltaTime;
+		} else if (rb.velocity.y > 2 && !Input.GetKey(KeyCode.Space)) {
+			rb.velocity += Vector3.up * Physics.gravity.y * lowJumpForce * Time.deltaTime;
 		}
 
 		// respawn in start position if player falls off plane
