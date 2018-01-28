@@ -13,39 +13,39 @@ public class PlayerController : MonoBehaviour {
 	[Header("Other player settings")]
 	public float fallThreshold; // how far the player falls before respawning
 
-	private Rigidbody rb;
+	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
-	private bool verticalMove = false; // is player vertical movement allowed
+
+	WorldManager worldManager; // reference to WorldManager
 
 	void Start() {
-		rb = GetComponent<Rigidbody> ();
-		startPosition = transform.position;
+		worldManager = WorldManager.instance; // set the reference to WorldManager instance
+		rb = GetComponent<Rigidbody> (); // get the rigidbody of this player object
+		startPosition = transform.position; // store the start position of the player
 	}
 
 	void Update () {
 		//speed = rb.velocity.y;
+		// player movement
 		if (Input.GetAxis ("Horizontal") > 0) {
 			transform.position += transform.right * Time.deltaTime * movementSpeed;
 		}
 		if (Input.GetAxis ("Horizontal") < 0) {
 			transform.position += -transform.right * Time.deltaTime * movementSpeed;
 		}
-		if (Input.GetAxis ("Vertical") > 0 && verticalMove) {
+		if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 			transform.position += transform.forward * Time.deltaTime * movementSpeed;
 		}
-		if (Input.GetAxis ("Vertical") < 0 && verticalMove) {
+		if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-		}
-		// toggle vertical movement
-		if (Input.GetKeyDown (KeyCode.C)) {
-			verticalMove = !verticalMove;
 		}
 		// jump
 		if (grounded && Input.GetKeyDown(KeyCode.Space)) {
 			rb.AddForce (0, jumpForce, 0, ForceMode.Impulse);
 			grounded = false;
 		}
+		// fall faster after jumping up
 		if(rb.velocity.y < 2){
 			rb.AddForce (Vector3.down * fallForce);
 		}
@@ -56,8 +56,10 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	// return true if player is allowed to jump again
+	// (helps prevent infinite jumping)
 	void OnCollisionEnter(Collision col){
-		if (col.transform.tag == "Untagged") {
+		if (col.transform.tag == "InvisGround" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground") {
 			grounded = true;
 			//Debug.Log ("Grounded again");
 		} 
