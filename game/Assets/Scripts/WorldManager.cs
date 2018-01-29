@@ -12,6 +12,8 @@ public class WorldManager : MonoBehaviour {
 	[Header("Objects")]
 	public Camera camera2d; // ref to 2d cam
 	public Camera camera3d; // ref to 3d cam
+//	public GameObject world2d;
+//	public GameObject world3d;
 
 	// array of all objects that need colliders altered when view switches
 	private GameObject[] changeCol; 
@@ -45,6 +47,9 @@ public class WorldManager : MonoBehaviour {
 				}
 				col.enabled = true;
 			}
+//			world3d.SetActive(true);
+//			world2d.SetActive (false);
+
 		} else if (mode2d) { //2d
 			foreach (GameObject obj in changeCol) {
 				Collider col = obj.GetComponent<Collider> ();
@@ -55,6 +60,8 @@ public class WorldManager : MonoBehaviour {
 				}
 				col.enabled = false;
 			}
+//			world2d.SetActive(true);
+//			world3d.SetActive (false);
 		}
 	}
 	
@@ -76,6 +83,8 @@ public class WorldManager : MonoBehaviour {
 					c.enabled = !c.enabled;
 				}
 			}
+//			world2d.SetActive(!world2d.activeSelf);
+//			world3d.SetActive (!world3d.activeSelf);
 		}
 	}
 }
