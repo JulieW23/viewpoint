@@ -62,8 +62,8 @@ public class PlayerController : MonoBehaviour {
 
 	// return true if player is allowed to jump again
 	// (helps prevent infinite jumping)
-	void OnCollisionEnter(Collision col){
-		if (col.transform.tag == "InvisGround" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground") {
+	void OnCollisionStay(Collision col){
+		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground") {
 			grounded = true;
 			//Debug.Log ("Grounded again");
 		} 
