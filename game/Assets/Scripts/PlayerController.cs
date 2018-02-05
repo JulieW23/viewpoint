@@ -69,4 +69,11 @@ public class PlayerController : MonoBehaviour {
 		} 
 	}
 
+	// collecting the coin objects
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.CompareTag("Coin")){
+			other.gameObject.SetActive(false);
+		}
+	}
+
 }
