@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class PositionPlayer : MonoBehaviour {
 
-	public float z;
+	public float x = 0f;
+	public float y = 0f;
+	public float z = 0f;
 
 	void OnTriggerStay(Collider collision){
 		if (collision.gameObject.name == "Player") {
 			GameObject player = collision.gameObject;
-			player.transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, z);
+			if (x != 0) {
+				player.transform.position = new Vector3 (x, player.transform.position.y, player.transform.position.z);
+			}
+			if (y != 0) {
+				player.transform.position = new Vector3 (player.transform.position.x, y, player.transform.position.z);
+			}
+			if (z != 0) {
+				player.transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, z);
+			}
 		}
 	}
 }
