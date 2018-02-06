@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -10,20 +11,22 @@ public class PlayerController : MonoBehaviour {
 	public float fallForce; // downward force applied to falling
 	public float lowJumpForce; // jump adjustment force
 	//public float speed;
-
 	[Header("Other player settings")]
 	public float fallThreshold; // how far the player falls before respawning
 
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
-
+	private int coinCount; // count the coins collected
+	public Text countText;
 	WorldManager worldManager; // reference to WorldManager
 
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
 		rb = GetComponent<Rigidbody> (); // get the rigidbody of this player object
 		startPosition = transform.position; // store the start position of the player
+		coinCount = 0;
+		SetCountText();
 	}
 
 	void Update () {
@@ -73,8 +76,13 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.CompareTag("Coin")){
 			other.gameObject.SetActive(false);
+			coinCount += 1;
+			SetCountText();
 		}
+	}
 
+	void SetCountText(){
+		countText.text = "Coins collected: " + coinCount.ToString();
 	}
 
 }
