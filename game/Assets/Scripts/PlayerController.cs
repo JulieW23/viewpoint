@@ -46,14 +46,14 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		// jump
-		if (grounded && Input.GetKeyDown(KeyCode.Space)) {
+		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
 		}
 		// fall faster after jumping up
 		if (rb.velocity.y < 0) {
 			rb.velocity += Vector3.up * Physics.gravity.y * fallForce * Time.deltaTime;
-		} else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) {
+		} else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) {
 			rb.velocity += Vector3.up * Physics.gravity.y * lowJumpForce * Time.deltaTime;
 		}
 
