@@ -154,7 +154,7 @@ public class WorldManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// switch 2d/3d mode when key is pressed
-		if (Input.GetKeyDown (KeyCode.C)) {
+		if (Input.GetButtonDown ("Change Perspective")) {
 			// update mode
 			mode2d = !mode2d;
 
