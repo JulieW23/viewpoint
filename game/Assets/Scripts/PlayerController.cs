@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour {
 		Debug.Log (rb.velocity.y);
 		Debug.Log (col.transform.tag);
 //		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D") {
-		if (rb.velocity.y == 0 && (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D")) {
+		if ((rb.velocity.y < 0.1 && rb.velocity.y > -0.1) && (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D")) {
 			grounded = true;
 			// Debug.Log ("Grounded again");
 		} 
