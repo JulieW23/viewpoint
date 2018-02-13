@@ -13,7 +13,7 @@ public class CoinManager : MonoBehaviour {
 	}
 	
 	void Update () {
- 		transform.Rotate(new Vector3(0, 70, 0) * Time.deltaTime);
+ 		transform.Rotate(new Vector3(0, 0, 70) * Time.deltaTime);
 		if (!worldManager.mode2d) { // 3d
 			transform.position = coin3D_pos;
 		} else {

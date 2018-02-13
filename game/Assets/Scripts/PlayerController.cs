@@ -30,21 +30,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update () {
-		//speed = rb.velocity.y;
-		// player movement
-		if (Input.GetAxis ("Horizontal") > 0) {
-			transform.position += transform.right * Time.deltaTime * movementSpeed;
-		}
-		if (Input.GetAxis ("Horizontal") < 0) {
-			transform.position += -transform.right * Time.deltaTime * movementSpeed;
-		}
-		if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
-			transform.position += transform.forward * Time.deltaTime * movementSpeed;
-		}
-		if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
-			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-		}
-
 		// jump
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
@@ -60,6 +45,22 @@ public class PlayerController : MonoBehaviour {
 		// respawn in start position if player falls off plane
 		if (transform.position.y < fallThreshold){
 			transform.position = startPosition;
+		}
+	}
+	void FixedUpdate() {
+		//speed = rb.velocity.y;
+		// player movement
+		if (Input.GetAxis ("Horizontal") > 0) {
+			transform.position += transform.right * Time.deltaTime * movementSpeed;
+		}
+		if (Input.GetAxis ("Horizontal") < 0) {
+			transform.position += -transform.right * Time.deltaTime * movementSpeed;
+		}
+		if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
+			transform.position += transform.forward * Time.deltaTime * movementSpeed;
+		}
+		if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
+			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
 		}
 	}
 
