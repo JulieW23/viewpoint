@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public float jumpForce; // upward force applied to jump
 	public float fallForce; // downward force applied to falling
 	public float lowJumpForce; // jump adjustment force
-	//public float speed;
+	public float speed;
 	[Header("Other player settings")]
 	public float fallThreshold; // how far the player falls before respawning
 
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 	void FixedUpdate() {
-		//speed = rb.velocity.y;
+		speed = rb.velocity.y;
 		// player movement
 		if (Input.GetAxis ("Horizontal") > 0) {
 			transform.position += transform.right * Time.deltaTime * movementSpeed;
@@ -69,8 +69,8 @@ public class PlayerController : MonoBehaviour {
 	void OnCollisionStay(Collision col){
 		Debug.Log (rb.velocity.y);
 		Debug.Log (col.transform.tag);
-		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D") {
-//		if (rb.velocity.y == 0 && (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground")) {
+//		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D") {
+		if (rb.velocity.y == 0 && (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground")) {
 			grounded = true;
 			// Debug.Log ("Grounded again");
 		} 
