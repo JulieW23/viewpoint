@@ -9,6 +9,9 @@ TagManager:
   - MeshDiff
   - MoveGround
   - Coin
+  - 2D
+  - 3D
+  - 2D1
   layers:
   - Default
   - TransparentFX

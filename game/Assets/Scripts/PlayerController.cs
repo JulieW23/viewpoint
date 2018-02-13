@@ -66,7 +66,10 @@ public class PlayerController : MonoBehaviour {
 	// return true if player is allowed to jump again
 	// (helps prevent infinite jumping)
 	void OnCollisionStay(Collision col){
-		if (rb.velocity.y == 0 && (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground")) {
+		Debug.Log (rb.velocity.y);
+		Debug.Log (col.transform.tag);
+		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D") {
+//		if (rb.velocity.y == 0 && (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground")) {
 			grounded = true;
 			// Debug.Log ("Grounded again");
 		} 

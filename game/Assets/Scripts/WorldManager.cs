@@ -19,6 +19,7 @@ public class WorldManager : MonoBehaviour {
 	private GameObject[] changeCol; 
 	// array of all objects that need mesh altered when view switches
 	private GameObject[] changeMesh;
+	private GameObject[] teleport;
 	// array of secret ground that relocates players
 	// to avoid player falling inside of a collider
 //	private GameObject[] moveGround;
@@ -53,7 +54,11 @@ public class WorldManager : MonoBehaviour {
 				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
 
 				foreach (Collider c in child_col) {
-					c.enabled = false;
+					if (c.gameObject.tag == "2D" || c.gameObject.tag == "2D") {
+						c.enabled = false;
+					} else if (c.gameObject.tag == "3D") {
+						c.enabled = true;
+					}
 				}
 				col.enabled = true;
 			}
@@ -72,7 +77,14 @@ public class WorldManager : MonoBehaviour {
 					if (child_col [i].gameObject.tag == "MoveGround") {
 						child_col [i].enabled = true;
 						child_ren [i].enabled = true;
-					} else {
+					}
+					else if (child_col[i].gameObject.tag == "2D" || child_col[i].gameObject.tag == "2D1") {
+						child_col[i].enabled = false;
+					}
+					else if (child_col[i].gameObject.tag == "3D") {
+						child_col[i].enabled = true;
+					}
+					else {
 						child_col [i].enabled = false;
 						child_ren [i].enabled = false;
 					}
@@ -80,6 +92,7 @@ public class WorldManager : MonoBehaviour {
 				col.enabled = true;
 				ren.enabled = true;
 			}
+
 //			foreach (GameObject obj in moveGround) {
 //				obj.SetActive (true);
 //			}
@@ -93,7 +106,11 @@ public class WorldManager : MonoBehaviour {
 				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
 
 				foreach (Collider c in child_col) {
-					c.enabled = true;
+					if (c.gameObject.tag == "2D" || c.gameObject.tag == "2D1") {
+						c.enabled = true;
+					} else if (c.gameObject.tag == "3D") {
+						c.enabled = false;
+					}
 				}
 				col.enabled = false;
 			}
@@ -111,7 +128,14 @@ public class WorldManager : MonoBehaviour {
 					if (child_col [i].gameObject.tag == "MoveGround") {
 						child_col [i].enabled = false;
 						child_ren [i].enabled = false;
-					} else {
+					} 
+					else if (child_col[i].gameObject.tag == "2D" || child_col[i].gameObject.tag == "2D1") {
+						child_col[i].enabled = true;
+					}
+					else if (child_col[i].gameObject.tag == "3D") {
+						child_col[i].enabled = false;
+					}
+					else {
 						child_col [i].enabled = true;
 						child_ren [i].enabled = true;
 					}
@@ -140,18 +164,32 @@ public class WorldManager : MonoBehaviour {
 
 			// colliders
 			foreach (GameObject obj in changeCol) {
+				Collider col = obj.GetComponent<Collider> ();
 				Collider[] all_col = obj.GetComponentsInChildren<Collider> ();
 				foreach (Collider c in all_col) {
-					c.enabled = !c.enabled;
+					if (c.gameObject.tag == "2D" || c.gameObject.tag == "2D1") {
+						c.enabled = mode2d;
+					} else if (c.gameObject.tag == "3D") {
+						c.enabled = !mode2d;
+					}
 				}
+				col.enabled = !col.enabled;
 			}
 			// mesh
 			foreach (GameObject obj in changeMesh){
 				Collider[] all_col = obj.GetComponentsInChildren<Collider> ();
 				Renderer[] all_ren = obj.GetComponentsInChildren<Renderer> ();
 				for (int i = 0; i < all_col.Length; i++) {
-					all_col [i].enabled = !all_col [i].enabled;
-					all_ren [i].enabled = !all_ren [i].enabled;
+					if (all_col [i].gameObject.tag == "2D") {
+						all_col [i].enabled = mode2d;
+					}
+					else if (all_col [i].gameObject.tag == "3D") {
+						all_col [i].enabled = !mode2d;
+					}
+					else {
+						all_col [i].enabled = !all_col [i].enabled;
+						all_ren [i].enabled = !all_ren [i].enabled;
+					}
 				}
 			}
 //			foreach (GameObject obj in moveGround) {

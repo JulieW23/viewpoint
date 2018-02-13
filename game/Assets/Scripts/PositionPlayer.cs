@@ -7,6 +7,11 @@ public class PositionPlayer : MonoBehaviour {
 	public float x = 0f;
 	public float y = 0f;
 	public float z = 0f;
+	private Collider col;
+
+	void Start(){
+		col = gameObject.GetComponent<Collider>();
+	}
 
 	void OnTriggerStay(Collider collision){
 		if (collision.gameObject.name == "Player") {
@@ -20,6 +25,7 @@ public class PositionPlayer : MonoBehaviour {
 			if (z != 0) {
 				player.transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, z);
 			}
+			col.enabled = false;
 		}
 	}
 }
