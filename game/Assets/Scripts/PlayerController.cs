@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour {
 		// fall faster after jumping up
 		if (rb.velocity.y < 0) {
 			rb.velocity += Vector3.up * Physics.gravity.y * fallForce * Time.deltaTime;
-		} else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) {
+		} 
+//		else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) {
+		else if (rb.velocity.y > 0) {
 			rb.velocity += Vector3.up * Physics.gravity.y * lowJumpForce * Time.deltaTime;
 		}
 
