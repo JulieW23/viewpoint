@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114305937478528202}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1330576076773832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -281, y: 37.57, z: -15.4}
+  m_LocalPosition: {x: -303.2, y: 43.7, z: -13.3}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4201246177652484}
@@ -230,7 +230,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -261,11 +261,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0b244a52abd240b5892d4d7e6d5a5ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 20
-  jumpForce: 22
+  movementSpeed: 28
+  jumpForce: 40
   fallForce: 5
   lowJumpForce: 5
-  fallThreshold: -80
+  speed: 0
+  fallThreshold: -200
   countText: {fileID: 0}
 --- !u!124 &124637050400573878
 Behaviour:
