@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	[Header("Other player settings")]
 	public float fallThreshold; // how far the player falls before respawning
-
+	private Vector3 startGravity;
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
 		rb = GetComponent<Rigidbody> (); // get the rigidbody of this player object
 		startPosition = transform.position; // store the start position of the player
+		startGravity = Physics.gravity;
 		coinCount = 0;
 		SetCountText();
 	}
@@ -35,6 +36,15 @@ public class PlayerController : MonoBehaviour {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
 		}
+
+		if (rb.velocity.y < 0 && Input.GetButton ("Jump")) {
+			Physics.gravity = new Vector3(Physics.gravity.x, 0.3F * Physics.gravity.y, Physics.gravity.z);
+		}
+
+		if (Input.GetButtonUp ("Jump")) {
+			Physics.gravity = startGravity;
+		}
+
 		// fall faster after jumping up
 		if (rb.velocity.y < 0) {
 			rb.velocity += Vector3.up * Physics.gravity.y * fallForce * Time.deltaTime;
