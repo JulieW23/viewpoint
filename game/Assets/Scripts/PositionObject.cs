@@ -6,6 +6,9 @@ public class PositionObject : MonoBehaviour {
 
 	[SerializeField] private Vector3 pos3D; 
 	[SerializeField] private Vector3 pos2D; 
+	public float timeTakenDuringLerp2D = 0.9f;
+	public float timeTakenDuringLerp3D = 1f;
+	private float timeStartedLerping;
 
 	WorldManager worldManager;
 
@@ -19,13 +22,27 @@ public class PositionObject : MonoBehaviour {
 			transform.position = pos3D;
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	void FixedUpdate(){
 		if (worldManager.mode2d) {
-			transform.position = pos2D;
+//			transform.position = pos2D;
+			if(transform.position != pos2D){
+				float timeSinceStarted = Time.time - timeStartedLerping;
+				float percentageComplete = timeSinceStarted / timeTakenDuringLerp2D;
+				transform.position = Vector3.Lerp(pos3D, pos2D, percentageComplete);
+			}
 		} else {
-			transform.position = pos3D;
+			//transform.position = pos3D;
+			if (transform.position != pos3D){
+				float timeSinceStarted = Time.time - timeStartedLerping;
+				float percentageComplete = timeSinceStarted / timeTakenDuringLerp3D;
+				transform.position = Vector3.Lerp(pos2D, pos3D, percentageComplete);
+			}
+		}
+	}
+	void Update () {
+		if (Input.GetButtonDown ("Change Perspective")) {
+			timeStartedLerping = Time.time;
 		}
 	}
 

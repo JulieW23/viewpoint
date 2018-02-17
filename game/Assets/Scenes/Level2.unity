@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &81026374 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 859412632}
 --- !u!1 &94274946
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +327,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 102.7, y: -25.5, z: -108}
   pos2D: {x: 102.7, y: -25.5, z: -8.57}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!64 &191245664
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -451,6 +458,120 @@ Transform:
   m_PrefabParentObject: {fileID: 4617734173856120, guid: 17964ecb4691d44f5b2c4aa60fe2443a,
     type: 2}
   m_PrefabInternal: {fileID: 201436878}
+--- !u!1 &222598529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1371822775177258, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 222598530}
+  - component: {fileID: 222598535}
+  - component: {fileID: 222598534}
+  - component: {fileID: 222598533}
+  - component: {fileID: 222598532}
+  - component: {fileID: 222598531}
+  m_Layer: 0
+  m_Name: Camera2D (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &222598530
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4715307713861180, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222598529}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7999999, y: 2.6, z: -24.733334}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_Children: []
+  m_Father: {fileID: 81026374}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222598531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222598529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3083e8c3a17f4001b642fc88dd1ea40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fov: 60
+  near: 0.3
+  far: 1000
+  orthographicSize: 50
+--- !u!114 &222598532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222598529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c547ed39d0a41f4adf39e96cc3af29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!81 &222598533
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 81662394138099340, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222598529}
+  m_Enabled: 1
+--- !u!124 &222598534
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 124637050400573878, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222598529}
+  m_Enabled: 1
+--- !u!20 &222598535
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 20274046185553822, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222598529}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 45
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!4 &308530913 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4895118880262794, guid: 488178baa6fb1a74db2bc83a53b52ed6,
@@ -733,6 +854,11 @@ Prefab:
       propertyPath: camera2d
       value: 
       objectReference: {fileID: 1426777550}
+    - target: {fileID: 114830658281981666, guid: 60eb4addd7ef74cbdad59d779f5449a9,
+        type: 2}
+      propertyPath: mode2d
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60eb4addd7ef74cbdad59d779f5449a9, type: 2}
   m_IsPrefabParent: 0
@@ -1376,6 +1502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 228.2006, y: -75.07054, z: 113.75}
   pos2D: {x: 228.2006, y: -75.07054, z: 16.7}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,6 +1517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 143.2006, y: -75.07053, z: 78.65}
   pos2D: {x: 143.2006, y: -75.07053, z: -18.3}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!64 &643906353
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2219,6 +2349,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 173.2006, y: -75.07054, z: 73.63828}
   pos2D: {x: 173.2006, y: -75.07054, z: -23.31172}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2232,6 +2364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 201.3687, y: -75.07053, z: 152.7775}
   pos2D: {x: 201.3687, y: -75.07053, z: -12.39}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2245,6 +2379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 148.224, y: -75.07054, z: 63.63828}
   pos2D: {x: 148.224, y: -75.07054, z: -33.31172}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,6 +2394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 266.8642, y: -35.07053, z: 63.63831}
   pos2D: {x: 266.8642, y: -35.07053, z: -33.31169}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,6 +2409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 298.2006, y: -75.07053, z: 163.6383}
   pos2D: {x: 298.2006, y: -75.07053, z: -23.29}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 293.2006, y: -75.07053, z: 143.6383}
   pos2D: {x: 293.2006, y: -75.07053, z: -33.2}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!4 &643906404
 Transform:
   m_ObjectHideFlags: 0
@@ -2915,6 +3057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: -116.8636, y: 74.54442, z: 41.36166}
   pos2D: {x: -116.8636, y: 74.54442, z: 1.2}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2928,6 +3072,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: -86.86365, y: 74.54442, z: -38.63834}
   pos2D: {x: -86.86365, y: 74.54442, z: 1.2}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!114 &643906439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,6 +3087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 311.8642, y: -45.07052, z: 63.63831}
   pos2D: {x: 311.8642, y: -45.07052, z: -33.31169}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!1001 &656752712
 Prefab:
   m_ObjectHideFlags: 0
@@ -3114,6 +3262,14 @@ Prefab:
       propertyPath: countText
       value: 
       objectReference: {fileID: 921386204}
+    - target: {fileID: 1541783844360192, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371822775177258, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
   m_IsPrefabParent: 0
@@ -3363,6 +3519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 53, y: -15.4, z: 252}
   pos2D: {x: 53, y: -15.4, z: -8.57}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!64 &1022113943
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3853,6 +4011,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: 266.8642, y: -50.57053, z: 83.83831}
   pos2D: {x: 266.8642, y: -50.57053, z: -13.11169}
+  timeTakenDuringLerp2D: 0.1
+  timeTakenDuringLerp3D: 1
 --- !u!1001 &1405163134
 Prefab:
   m_ObjectHideFlags: 0

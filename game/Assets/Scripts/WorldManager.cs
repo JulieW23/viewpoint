@@ -35,8 +35,8 @@ public class WorldManager : MonoBehaviour {
 
 	void Start () {
 		// enable the correct camera
-		camera2d.enabled = mode2d;
-		camera3d.enabled = !mode2d;
+//		camera2d.enabled = mode2d;
+//		camera3d.enabled = !mode2d;
 
 		// get objects by tag
 		changeCol = GameObject.FindGameObjectsWithTag("ColliderDiff");
@@ -159,8 +159,8 @@ public class WorldManager : MonoBehaviour {
 			mode2d = !mode2d;
 
 			// camera
-			camera2d.enabled = !camera2d.enabled;
-			camera3d.enabled = !camera3d.enabled;
+//			camera2d.enabled = !camera2d.enabled;
+//			camera3d.enabled = !camera3d.enabled;
 
 			// colliders
 			foreach (GameObject obj in changeCol) {
