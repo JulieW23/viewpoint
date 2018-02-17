@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
 
 	[Header("Control sensitivity")]
+	public bool glidingEnabled; // enables gliding if true
 	public float movementSpeed;
 	public float jumpForce; // upward force applied to jump
 	public float fallForce; // downward force applied to falling
@@ -41,11 +42,11 @@ public class PlayerController : MonoBehaviour {
 			grounded = false;
 		}
 
-		if (rb.velocity.y < 0 && Input.GetButton ("Jump")) {
+		if (glidingEnabled && rb.velocity.y < 0 && Input.GetButton ("Jump")) {
 			Physics.gravity = new Vector3(Physics.gravity.x, 0.5F * Physics.gravity.y, Physics.gravity.z);
 		}
 
-		if (Input.GetButtonUp ("Jump")) {
+		if (glidingEnabled && Input.GetButtonUp ("Jump")) {
 			Physics.gravity = startGravity;
 		}
 
