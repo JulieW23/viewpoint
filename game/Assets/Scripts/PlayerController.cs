@@ -15,12 +15,15 @@ public class PlayerController : MonoBehaviour {
 	[Header("Other player settings")]
 	public float fallThreshold; // how far the player falls before respawning
 	private Vector3 startGravity;
+	public float hopHeight = 0.2f;
+
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
 	private int coinCount; // count the coins collected
 	public Text countText;
 	WorldManager worldManager; // reference to WorldManager
+	private int boxEncounter = 0;
 
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour {
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
+			boxEncounter = 1;
 		}
 
 		if (rb.velocity.y > 0.1 || rb.velocity.y < -0.1) {
@@ -63,21 +67,31 @@ public class PlayerController : MonoBehaviour {
 		if (transform.position.y < fallThreshold){
 			transform.position = startPosition;
 		}
+		boxEncounter = 0;
+	}
+	void hopping(){
+		if (boxEncounter == 0){
+			transform.position += transform.up * hopHeight;	
+		}
 	}
 	void FixedUpdate() {
 		speed = rb.velocity.y;
 		// player movement
 		if (Input.GetAxis ("Horizontal") > 0) {
 			transform.position += transform.right * Time.deltaTime * movementSpeed;
+			//hopping();
 		}
 		if (Input.GetAxis ("Horizontal") < 0) {
 			transform.position += -transform.right * Time.deltaTime * movementSpeed;
+			//hopping();
 		}
 		if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 			transform.position += transform.forward * Time.deltaTime * movementSpeed;
+			//hopping();
 		}
 		if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
+			//hopping();
 		}
 	}
 
@@ -93,9 +107,23 @@ public class PlayerController : MonoBehaviour {
 		} 
 	}
 
+	void OnCollisionEnter(Collision other) {
+		// turn off hopping when collsion with box
+		if (other.gameObject.CompareTag("Box")){
+			boxEncounter = 1;
+		}
+	}
+	void OnCollisionExit(Collision other) {
+		// turn on hopping back on
+		if (other.gameObject.CompareTag("Box")){
+			boxEncounter = 0;
+		}
+	}
+
 	// collecting the coin objects
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.CompareTag("Coin")){
+			Debug.Log("player touch coin");
 			other.gameObject.SetActive(false);
 			coinCount += 1;
 			SetCountText();
@@ -105,5 +133,6 @@ public class PlayerController : MonoBehaviour {
 	void SetCountText(){
 		countText.text = "Coins collected: " + coinCount.ToString();
 	}
+
 
 }

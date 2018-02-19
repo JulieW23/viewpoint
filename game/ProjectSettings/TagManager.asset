@@ -12,6 +12,7 @@ TagManager:
   - 2D
   - 3D
   - 2D1
+  - Box
   layers:
   - Default
   - TransparentFX
