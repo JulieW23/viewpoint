@@ -29,15 +29,5 @@ public class CoinManager : MonoBehaviour {
 			transform.position = coin2D_pos;
 			coinCollider.size = coin2D_collider;
 		}
-/* 		if (this.CompareTag("Coin")){
-			transform.Rotate(new Vector3(0, 0, 70) * Time.deltaTime);
-			if (!worldManager.mode2d) { // 3d world
-				transform.position = coin3D_pos;
-				//coinCollider.size = coin3D_collider;
-			} else {
-				transform.position = coin2D_pos;
-				//coinCollider.size = coin2D_collider;
-			}
-		} */
 	}
 }
