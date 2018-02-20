@@ -3208,6 +3208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin2D_pos: {x: -157, y: 89, z: 5}
   coin2D_collider: {x: 10, y: 8, z: 8}
+  timeTakenDuringLerp2D: 1
+  timeTakenDuringLerp3D: 1
 --- !u!65 &700922359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3950,6 +3952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin2D_pos: {x: 283, y: -60, z: 145}
   coin2D_collider: {x: 1, y: 8, z: 8}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!65 &1232168268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4269,6 +4273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin2D_pos: {x: -248, y: 40, z: 4}
   coin2D_collider: {x: 0, y: 0, z: 0}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!65 &1551648174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4401,8 +4407,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68a8c962ec738f42a9a2e696709759d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin2D_pos: {x: 307, y: -30, z: -35}
+  coin2D_pos: {x: 311, y: -30, z: -35}
   coin2D_collider: {x: 10, y: 8, z: 8}
+  timeTakenDuringLerp2D: 0.5
+  timeTakenDuringLerp3D: 1
 --- !u!65 &1824472880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4526,6 +4534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin2D_pos: {x: -37, y: 70, z: -16}
   coin2D_collider: {x: 100, y: 8, z: 8}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!65 &1989575337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4654,6 +4664,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin2D_pos: {x: 205, y: -25, z: -35}
   coin2D_collider: {x: 100, y: 8, z: 8}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!65 &2106394670
 BoxCollider:
   m_ObjectHideFlags: 0

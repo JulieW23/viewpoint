@@ -12,6 +12,9 @@ public class CoinManager : MonoBehaviour {
 	[SerializeField] private Vector3 coin2D_collider;
 	BoxCollider coinCollider;
 	GameObject coin;
+	public float timeTakenDuringLerp2D = 0.9f;
+	public float timeTakenDuringLerp3D = 1f;
+	private float timeStartedLerping;
 	void Start (){
 		worldManager = WorldManager.instance;
 		coin = transform.GetChild(0).gameObject; //get the child coin inside
@@ -19,15 +22,25 @@ public class CoinManager : MonoBehaviour {
 		coin3D_pos = transform.position;
 		coin3D_collider = coinCollider.size;
 	}
-	
+	void FixedUpdate () {
+		if (!worldManager.mode2d){ // in 3d world
+			coinCollider.size = coin3D_collider;
+			// transform animation
+			float timeSinceStarted = Time.time - timeStartedLerping;
+			float percentageComplete = timeSinceStarted / timeTakenDuringLerp2D;
+			transform.position = Vector3.Lerp(coin2D_pos, coin3D_pos, percentageComplete);
+		} else { //in 2d world
+			coinCollider.size = coin2D_collider;
+			// transform animation
+			float timeSinceStarted = Time.time - timeStartedLerping;
+			float percentageComplete = timeSinceStarted / timeTakenDuringLerp3D;
+			transform.position = Vector3.Lerp(coin3D_pos, coin2D_pos, percentageComplete);
+		}
+	}
 	void Update () {
 		coin.transform.Rotate(new Vector3(0, 0, 70) * Time.deltaTime);
-		if (!worldManager.mode2d){ // in 3d world
-			transform.position = coin3D_pos;
-			coinCollider.size = coin3D_collider;
-		} else { //in 2d world
-			transform.position = coin2D_pos;
-			coinCollider.size = coin2D_collider;
+		if (Input.GetButtonDown ("Change Perspective")) {
+			timeStartedLerping = Time.time;
 		}
 	}
 }
