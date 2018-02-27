@@ -7,6 +7,7 @@ public class PositionPlayer : MonoBehaviour {
 	public float x = 0f;
 	public float y = 0f;
 	public float z = 0f;
+	public bool disable = false;
 	private Collider col;
 
 	void Start(){
@@ -25,7 +26,9 @@ public class PositionPlayer : MonoBehaviour {
 			if (z != 0) {
 				player.transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, z);
 			}
-			col.enabled = false;
+			if (disable == true) {
+				col.enabled = false;
+			}
 		}
 	}
 }
