@@ -22,17 +22,6 @@ public class CameraController : MonoBehaviour {
 	public float far = 1000f;
 	public float orthographicSize = 50f;
 
-//	[Header("3D Camera Positioning")]
-//	[SerializeField] private Vector3 pos3D; // position vector
-//	[SerializeField] private Vector3 rot3D; // rotation vector
-//
-//	[Header("2D Camera Positioning")]
-//	[SerializeField] private Vector3 pos2D; // position vector
-//	[SerializeField] private Vector3 rot2D; // rotation vector
-
-//	public float timeTakenDuringLerp = 10f;
-//	private float timeStartedLerping;
-
 	void Start()
 	{
 		// get camera
@@ -67,21 +56,9 @@ public class CameraController : MonoBehaviour {
 			if (orthoOn) {
 				blender.BlendToMatrix (ortho, 1f);
 //				Debug.Log ("2D");
-//				float timeSinceStarted = Time.time - timeStartedLerping;
-//				float percentageComplete = timeSinceStarted / timeTakenDuringLerp;
-//				Quaternion goalRotation = Quaternion.Euler (rot2D);
-//				Quaternion startRotation = Quaternion.Euler (rot3D);
-//				transform.localPosition = Vector3.Lerp (pos3D, pos2D, percentageComplete);
-//				transform.localRotation = Quaternion.Lerp (startRotation, goalRotation, Time.time * timeTakenDuringLerp);
+
 			} else {
 				blender.BlendToMatrix (perspective, 5f);
-//				Debug.Log ("3D");
-//				float timeSinceStarted = Time.time - timeStartedLerping;
-//				float percentageComplete = timeSinceStarted / timeTakenDuringLerp;
-//				Quaternion goalRotation = Quaternion.Euler (rot3D);
-//				Quaternion startRotation = Quaternion.Euler (rot2D);
-//				transform.localPosition = Vector3.Lerp (pos2D, pos3D, percentageComplete);
-//				transform.localRotation = Quaternion.Lerp (startRotation, goalRotation, Time.time * timeTakenDuringLerp);
 			}
 		}
 	}
