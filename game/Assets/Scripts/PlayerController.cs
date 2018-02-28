@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 	WorldManager worldManager; // reference to WorldManager
 	private int boxEncounter = 0;
 
+	Animator player_anim;
+
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
 		rb = GetComponent<Rigidbody> (); // get the rigidbody of this player object
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour {
 		startGravity = Physics.gravity;
 		coinCount = 0;
 		SetCountText();
+		player_anim = GetComponent<Animator>(); //get animator for animation
 	}
 
 	void Update () {
@@ -40,12 +43,13 @@ public class PlayerController : MonoBehaviour {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
 			boxEncounter = 1;
+			player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
 		}
 
 		if (rb.velocity.y > 0.1 || rb.velocity.y < -0.1) {
 			grounded = false;
 		}
-
+		// glide
 		if (glidingEnabled && rb.velocity.y < 0 && Input.GetButton ("Jump")) {
 			Physics.gravity = new Vector3(Physics.gravity.x, 0.5F * Physics.gravity.y, Physics.gravity.z);
 		}
@@ -53,7 +57,6 @@ public class PlayerController : MonoBehaviour {
 		if (glidingEnabled && Input.GetButtonUp ("Jump")) {
 			Physics.gravity = startGravity;
 		}
-
 		// fall faster after jumping up
 		if (rb.velocity.y <= 0) {
 			rb.velocity += Vector3.up * Physics.gravity.y * fallForce * Time.deltaTime;
@@ -79,20 +82,21 @@ public class PlayerController : MonoBehaviour {
 		// player movement
 		if (Input.GetAxis ("Horizontal") > 0) {
 			transform.position += transform.right * Time.deltaTime * movementSpeed;
-			//hopping();
-		}
-		if (Input.GetAxis ("Horizontal") < 0) {
+			player_anim.SetInteger("State", 1);
+		} else if (Input.GetAxis ("Horizontal") < 0) {
 			transform.position += -transform.right * Time.deltaTime * movementSpeed;
-			//hopping();
-		}
-		if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
+			//walk right
+		} else if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 			transform.position += transform.forward * Time.deltaTime * movementSpeed;
-			//hopping();
-		}
-		if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
+			player_anim.SetInteger("State", 1);
+		} else if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-			//hopping();
+			//walk right
+		} else{
+			player_anim.SetInteger("State", 0);
 		}
+		
+		
 	}
 
 	// return true if player is allowed to jump again
