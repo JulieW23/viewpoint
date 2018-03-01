@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour {
 	public Text countText;
 	WorldManager worldManager; // reference to WorldManager
 	private int boxEncounter = 0;
-
 	Animator player_anim;
+	private bool left, right; // animation direction
 
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 		coinCount = 0;
 		SetCountText();
 		player_anim = GetComponent<Animator>(); //get animator for animation
+		right = true;
 	}
 
 	void Update () {
@@ -43,7 +44,7 @@ public class PlayerController : MonoBehaviour {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
 			boxEncounter = 1;
-			player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
+			//player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
 		}
 
 		if (rb.velocity.y > 0.1 || rb.velocity.y < -0.1) {
@@ -82,22 +83,42 @@ public class PlayerController : MonoBehaviour {
 		// player movement
 		if (Input.GetAxis ("Horizontal") > 0) {
 			transform.position += transform.right * Time.deltaTime * movementSpeed;
-			player_anim.SetInteger("State", 1);
+			TurnRight(1);
 		} else if (Input.GetAxis ("Horizontal") < 0) {
 			transform.position += -transform.right * Time.deltaTime * movementSpeed;
-			//walk right
+			TurnLeft(1);
 		} else if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 			transform.position += transform.forward * Time.deltaTime * movementSpeed;
-			player_anim.SetInteger("State", 1);
+			TurnRight(1);
 		} else if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-			//walk right
-		} else{
-			player_anim.SetInteger("State", 0);
+			TurnLeft(1);
+		} else {
+			// back to idle
+			if (left){
+				TurnLeft(0);
+			}else{
+				TurnRight(0);
+			}
 		}
-		
-		
 	}
+	// Turn left with corresponded state
+	void TurnLeft(int state){
+		player_anim.SetInteger("State", state);
+		if (left){ return ;}
+		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+		left = true;
+		right = false;
+	}
+	// Turn left with corresponded state
+	void TurnRight(int state){
+		player_anim.SetInteger("State", state);
+		if (right){ return ;}
+		transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+		left = false;
+		right = true;
+	}
+
 
 	// return true if player is allowed to jump again
 	// (helps prevent infinite jumping)
