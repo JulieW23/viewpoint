@@ -38,7 +38,7 @@ public class CoinManager : MonoBehaviour {
 		}
 	}
 	void Update () {
-		coin.transform.Rotate(new Vector3(0, 0, 70) * Time.deltaTime);
+		coin.transform.Rotate(new Vector3(0, 70, 0) * Time.deltaTime);
 		if (Input.GetButtonDown ("Change Perspective")) {
 			timeStartedLerping = Time.time;
 		}
