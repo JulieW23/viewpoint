@@ -658,8 +658,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -674,8 +674,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -1072,11 +1072,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 129
+      value: 128.46
       objectReference: {fileID: 0}
     - target: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 100.7
+      value: 100.5
       objectReference: {fileID: 0}
     - target: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1109,7 +1109,7 @@ Prefab:
     - target: {fileID: 114305937478528202, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
         type: 2}
       propertyPath: countText
-      value:
+      value: 
       objectReference: {fileID: 1361462047}
     - target: {fileID: 4914422303990916, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1119,10 +1119,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -85.1
       objectReference: {fileID: 0}
-
     - target: {fileID: 114305937478528202, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
         type: 2}
       propertyPath: glidingEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
         type: 2}
       propertyPath: pos2d.z
@@ -1146,12 +1147,20 @@ Prefab:
     - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
         type: 2}
       propertyPath: player
-      value:
+      value: 
       objectReference: {fileID: 1459898047}
     - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
         type: 2}
       propertyPath: timeTakenDuringLerp2D
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
@@ -1673,12 +1682,12 @@ Prefab:
     - target: {fileID: 114830658281981666, guid: 60eb4addd7ef74cbdad59d779f5449a9,
         type: 2}
       propertyPath: camera2d
-      value:
+      value: 
       objectReference: {fileID: 1490799390}
     - target: {fileID: 114830658281981666, guid: 60eb4addd7ef74cbdad59d779f5449a9,
         type: 2}
       propertyPath: camera3d
-      value:
+      value: 
       objectReference: {fileID: 249003324}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60eb4addd7ef74cbdad59d779f5449a9, type: 2}
@@ -1781,7 +1790,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17964ecb4691d44f5b2c4aa60fe2443a, type: 2}
   m_IsPrefabParent: 0
-
+--- !u!4 &1459898047 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 901096385}
 --- !u!1001 &1481329082
 Prefab:
   m_ObjectHideFlags: 0
@@ -1869,8 +1882,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101908cd6b16b4943b2aa2bdd5e8611e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!122 &1481329090
 Halo:
   m_ObjectHideFlags: 0
@@ -1882,11 +1895,6 @@ Halo:
     serializedVersion: 2
     rgba: 4286611584
   m_Size: 15
---- !u!4 &1459898047 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
-    type: 2}
-  m_PrefabInternal: {fileID: 901096385}
 --- !u!20 &1490799390 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20794862469677364, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
@@ -2005,8 +2013,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2023,8 +2031,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
@@ -3373,8 +3381,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   pos3D: {x: 65.81128, y: 104.6013, z: 377.5746}
   pos2D: {x: 126.4, y: 104.6013, z: 377.5746}
   timeTakenDuringLerp2D: 0.9
@@ -3730,8 +3738,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   pos3D: {x: 185.8113, y: 104.6013, z: 387.5747}
   pos2D: {x: 126.4, y: 104.6013, z: 387.5747}
   timeTakenDuringLerp2D: 0.9
@@ -3745,8 +3753,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   pos3D: {x: 185.8113, y: 104.6013, z: 407.5747}
   pos2D: {x: 126.4, y: 104.6013, z: 407.5747}
   timeTakenDuringLerp2D: 0.9
@@ -3760,8 +3768,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   pos3D: {x: 65.81128, y: 104.6013, z: 397.5747}
   pos2D: {x: 126.4, y: 104.6013, z: 397.5747}
   timeTakenDuringLerp2D: 0.9
