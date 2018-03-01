@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
-	private int coinCount; // count the coins collected
+	public static int coinCount; // count the coins collected
 	public Text countText;
 	WorldManager worldManager; // reference to WorldManager
 	private int boxEncounter = 0;
@@ -131,6 +132,14 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			coinCount += 1;
 			SetCountText();
+		}
+
+		if (coinCount >= 1 && other.gameObject.CompareTag ("Arch")) {
+			// Teleport the User to the next scene
+			Debug.Log("player touch arch");
+			SceneManager.LoadScene("Level2", LoadSceneMode.Additive);
+			coinCount = 0;
+			glidingEnabled = false;
 		}
 	}
 

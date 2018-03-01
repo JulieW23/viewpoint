@@ -13,6 +13,7 @@ TagManager:
   - 3D
   - 2D1
   - Box
+  - Arch
   layers:
   - Default
   - TransparentFX
