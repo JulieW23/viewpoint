@@ -22,6 +22,15 @@ public class CameraController : MonoBehaviour {
 	public float far = 1000f;
 	public float orthographicSize = 50f;
 
+	[SerializeField] private Vector3 pos2d;
+	[SerializeField] private Vector3 pos3d;
+
+	public Transform player;
+
+	public float timeTakenDuringLerp2D = 0.9f;
+	public float timeTakenDuringLerp3D = 1f;
+	private float timeStartedLerping;
+
 	void Start()
 	{
 		// get camera
@@ -49,16 +58,32 @@ public class CameraController : MonoBehaviour {
 
 	void Update()
 	{
+		transform.LookAt (player);
 		if (Input.GetButtonDown("Change Perspective"))
 		{
-//			timeStartedLerping = Time.time;
+			timeStartedLerping = Time.time;
 			orthoOn = !orthoOn;
 			if (orthoOn) {
 				blender.BlendToMatrix (ortho, 1f);
 //				Debug.Log ("2D");
-
 			} else {
 				blender.BlendToMatrix (perspective, 5f);
+			}
+		}
+	}
+
+	void FixedUpdate(){
+		if (worldManager.mode2d) {
+			if(transform.position != pos2d){
+				float timeSinceStarted = Time.time - timeStartedLerping;
+				float percentageComplete = timeSinceStarted / timeTakenDuringLerp2D;
+				transform.localPosition = Vector3.Lerp(pos3d, pos2d, percentageComplete);
+			}
+		} else {
+			if (transform.position != pos3d){
+				float timeSinceStarted = Time.time - timeStartedLerping;
+				float percentageComplete = timeSinceStarted / timeTakenDuringLerp3D;
+				transform.localPosition = Vector3.Lerp(pos2d, pos3d, percentageComplete);
 			}
 		}
 	}

@@ -1119,6 +1119,36 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -85.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+        type: 2}
+      propertyPath: pos2d.z
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+        type: 2}
+      propertyPath: pos3d.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+        type: 2}
+      propertyPath: pos3d.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+        type: 2}
+      propertyPath: pos3d.z
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1459898047}
+    - target: {fileID: 114215919050474400, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+        type: 2}
+      propertyPath: timeTakenDuringLerp2D
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2, type: 2}
   m_IsPrefabParent: 0
@@ -1747,6 +1777,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17964ecb4691d44f5b2c4aa60fe2443a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1459898047 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4796712945749176, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 901096385}
 --- !u!20 &1490799390 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20794862469677364, guid: 04fa8b68e408e4f4f9fd82dc63c79bd2,
