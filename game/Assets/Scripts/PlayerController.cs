@@ -155,12 +155,12 @@ public class PlayerController : MonoBehaviour {
 			SetCountText();
 		}
 
-		if (coinCount >= 1 && other.gameObject.CompareTag ("Arch")) {
+		if (coinCount >= 3 && other.gameObject.CompareTag ("Arch")) {
 			// Teleport the User to the next scene
 			Debug.Log("player touch arch");
+			Debug.Log (coinCount.ToString());
 			SceneManager.LoadScene("Level2", LoadSceneMode.Additive);
 			coinCount = 0;
-			glidingEnabled = false;
 		}
 	}
 
