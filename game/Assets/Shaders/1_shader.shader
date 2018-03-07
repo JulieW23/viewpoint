@@ -1,6 +1,6 @@
 ﻿Shader "LearningShaders/PersonalTests/Oren-NayarTest2" {
      Properties {
-         _MainTex ("Base (RGB)", 2D) = "white" {}
+		 _MainTex ("Base (RGB)", 2D) = "white" {}
          _BumpTex("Bump",2D)="bump"{}
          _NormalIntensity("Intensity",Range(0,2))=1
          _Roughness("Roughness",float)=0.0
