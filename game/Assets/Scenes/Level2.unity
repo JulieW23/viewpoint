@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1431,6 +1431,8 @@ GameObject:
   - component: {fileID: 510400205}
   - component: {fileID: 510400204}
   - component: {fileID: 510400206}
+  - component: {fileID: 510400207}
+  - component: {fileID: 510400208}
   m_Layer: 0
   m_Name: stair_1
   m_TagString: ColliderDiff
@@ -1444,7 +1446,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400044, guid: 6d44ea95a341046958f2702083285bf5, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510400202}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -1.0410428, y: 34.99993, z: -98.205444}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1454,7 +1456,7 @@ Transform:
   - {fileID: 495346974}
   m_Father: {fileID: 2018234475}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!23 &510400204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1512,6 +1514,33 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300032, guid: 6d44ea95a341046958f2702083285bf5, type: 3}
+--- !u!122 &510400207
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510400202}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4284511096
+  m_Size: 35
+--- !u!114 &510400208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510400202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03ee1e7a5b7645dda4beda14e32bb07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 40
+  player: {fileID: 581168189}
+  angle: {x: 0, y: 0, z: 90}
+  duration: 1
+  showIndicator: 0
 --- !u!1 &517380153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1920,21 @@ Prefab:
         type: 2}
       propertyPath: mode2d
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830658281981666, guid: 60eb4addd7ef74cbdad59d779f5449a9,
+        type: 2}
+      propertyPath: left
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830658281981666, guid: 60eb4addd7ef74cbdad59d779f5449a9,
+        type: 2}
+      propertyPath: right
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830658281981666, guid: 60eb4addd7ef74cbdad59d779f5449a9,
+        type: 2}
+      propertyPath: back
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60eb4addd7ef74cbdad59d779f5449a9, type: 2}

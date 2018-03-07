@@ -9,20 +9,19 @@ public class WorldManager : MonoBehaviour {
 	[Header("Init Settings")]
 	public bool mode2d; // true if 2d, false if 3d
 
-	[Header("Objects")]
-	public Camera camera2d; // ref to 2d cam
-	public Camera camera3d; // ref to 3d cam
-//	public GameObject world2d;
-//	public GameObject world3d;
+	[Header ("World Orientation")]
+	public float front = 0f;
+	public float left = 90f;
+	public float right = -90f;
+	public float back = 180f;
 
 	// array of all objects that need colliders altered when view switches
 	private GameObject[] changeCol; 
 	// array of all objects that need mesh altered when view switches
 	private GameObject[] changeMesh;
-	private GameObject[] teleport;
-	// array of secret ground that relocates players
-	// to avoid player falling inside of a collider
-//	private GameObject[] moveGround;
+	// array of all objects that can be rotated
+	private GameObject[] rotatable;
+//	private GameObject[] teleport;
 
 	void Awake(){
 		// make sure there is only once instance of WorldManager
@@ -34,18 +33,15 @@ public class WorldManager : MonoBehaviour {
 	}
 
 	void Start () {
-		// enable the correct camera
-//		camera2d.enabled = mode2d;
-//		camera3d.enabled = !mode2d;
 
 		// get objects by tag
 		changeCol = GameObject.FindGameObjectsWithTag("ColliderDiff");
 		changeMesh = GameObject.FindGameObjectsWithTag ("MeshDiff");
-//		moveGround = GameObject.FindGameObjectsWithTag ("MoveGround");
+		rotatable = GameObject.FindGameObjectsWithTag ("Rotatable");
 
 		// use the correct colliders
 		if (!mode2d) { //3d
-			// OPTIMIZE THIS SOMEHOW
+			// ***** COLLIDER DIFF *****
 			// for all objects that have different colliders in each mode
 			foreach (GameObject obj in changeCol) {
 				// get the collider of the object
@@ -62,6 +58,7 @@ public class WorldManager : MonoBehaviour {
 				}
 				col.enabled = true;
 			}
+			// ***** MESH DIFF *****
 			// for all objects that have different mesh in each mode
 			foreach (GameObject obj in changeMesh) {
 				// get the collider of the object
@@ -74,11 +71,7 @@ public class WorldManager : MonoBehaviour {
 				Renderer[] child_ren = obj.GetComponentsInChildren<Renderer> ();
 
 				for (int i = 0; i < child_col.Length; i++) {
-					if (child_col [i].gameObject.tag == "MoveGround") {
-						child_col [i].enabled = true;
-						child_ren [i].enabled = true;
-					}
-					else if (child_col[i].gameObject.tag == "2D" || child_col[i].gameObject.tag == "2D1") {
+					if (child_col[i].gameObject.tag == "2D") {
 						child_col[i].enabled = false;
 					}
 					else if (child_col[i].gameObject.tag == "3D") {
@@ -92,21 +85,28 @@ public class WorldManager : MonoBehaviour {
 				col.enabled = true;
 				ren.enabled = true;
 			}
-
-//			foreach (GameObject obj in moveGround) {
-//				obj.SetActive (true);
-//			}
-
-//			world3d.SetActive(true);
-//			world2d.SetActive (false);
-//
+			// ***** ROTATABLE *****
+			// for all objects that are rotatable
+			foreach (GameObject obj in rotatable){
+				// get the collider of the object
+				Collider col  = obj.GetComponent<Collider>();
+				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
+				// disable all children's colliders
+				for (int i = 0; i < child_col.Length; i++) {
+					child_col [i].enabled = false;
+				}
+				// enable it's own collider
+				col.enabled = true;
+			}
+				
 		} else if (mode2d) { //2d
+			// ***** COLLIDER DIFF *****
 			foreach (GameObject obj in changeCol) {
 				Collider col = obj.GetComponent<Collider> ();
 				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
 
 				foreach (Collider c in child_col) {
-					if (c.gameObject.tag == "2D" || c.gameObject.tag == "2D1") {
+					if (c.gameObject.tag == "2D") {
 						c.enabled = true;
 					} else if (c.gameObject.tag == "3D") {
 						c.enabled = false;
@@ -114,6 +114,7 @@ public class WorldManager : MonoBehaviour {
 				}
 				col.enabled = false;
 			}
+			// ***** MESH DIFF *****
 			foreach (GameObject obj in changeMesh) {
 				// get the collider of the object
 				Collider col = obj.GetComponent<Collider> ();
@@ -125,11 +126,7 @@ public class WorldManager : MonoBehaviour {
 				Renderer[] child_ren = obj.GetComponentsInChildren<Renderer> ();
 
 				for (int i = 0; i < child_col.Length; i++) {
-					if (child_col [i].gameObject.tag == "MoveGround") {
-						child_col [i].enabled = false;
-						child_ren [i].enabled = false;
-					} 
-					else if (child_col[i].gameObject.tag == "2D" || child_col[i].gameObject.tag == "2D1") {
+					if (child_col[i].gameObject.tag == "2D") {
 						child_col[i].enabled = true;
 					}
 					else if (child_col[i].gameObject.tag == "3D") {
@@ -143,11 +140,17 @@ public class WorldManager : MonoBehaviour {
 				col.enabled = false;
 				ren.enabled = false;
 			}
-//			foreach (GameObject obj in moveGround) {
-//				obj.SetActive (false);
-//			}
-//			world2d.SetActive(true);
-//			world3d.SetActive (false);
+			foreach (GameObject obj in rotatable) {
+				Collider col = obj.GetComponent<Collider> ();
+				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
+				for (int i = 0; i < child_col.Length; i++) {
+					if (child_col [i].gameObject.tag == "Front") {
+						child_col [i].enabled = true;
+					} else {
+						child_col [i].enabled = false;
+					}
+				}
+			}
 		}
 	}
 	
@@ -158,16 +161,12 @@ public class WorldManager : MonoBehaviour {
 			// update mode
 			mode2d = !mode2d;
 
-			// camera
-//			camera2d.enabled = !camera2d.enabled;
-//			camera3d.enabled = !camera3d.enabled;
-
 			// colliders
 			foreach (GameObject obj in changeCol) {
 				Collider col = obj.GetComponent<Collider> ();
 				Collider[] all_col = obj.GetComponentsInChildren<Collider> ();
 				foreach (Collider c in all_col) {
-					if (c.gameObject.tag == "2D" || c.gameObject.tag == "2D1") {
+					if (c.gameObject.tag == "2D") {
 						c.enabled = mode2d;
 					} else if (c.gameObject.tag == "3D") {
 						c.enabled = !mode2d;
@@ -192,11 +191,31 @@ public class WorldManager : MonoBehaviour {
 					}
 				}
 			}
-//			foreach (GameObject obj in moveGround) {
-//				obj.SetActive (!obj.activeSelf);
-//			}
-//			world2d.SetActive(!world2d.activeSelf);
-//			world3d.SetActive (!world3d.activeSelf);
 		}
+		// rotatable
+//		foreach (GameObject obj in rotatable){
+//			Collider col = obj.GetComponent<Collider> ();
+//			Collider[] all_col = obj.GetComponentsInChildren<Collider> ();
+//			if (mode2d) {
+//				for (int i = 0; i < all_col.Length; i++) {
+//					if (obj.transform.eulerAngles.z == front && all_col [i].gameObject.tag == "Front") {
+//						all_col [i].enabled = true;
+//					} else if (obj.transform.eulerAngles.z == left && all_col [i].gameObject.tag == "Left") {
+//						all_col [i].enabled = true;
+//					} else if (obj.transform.eulerAngles.z == right && all_col [i].gameObject.tag == "Right") {
+//						all_col [i].enabled = true;
+//					} else if (obj.transform.eulerAngles.z == back && all_col [i].gameObject.tag == "Back") {
+//						all_col [i].enabled = true;
+//					} else {
+//						all_col [i].enabled = false;
+//					}
+//				}
+//			} else {
+//				for (int i = 0; i < all_col.Length; i++) {
+//					all_col [i].enabled = false;
+//				}
+//				col.enabled = true;
+//			}
+//		}
 	}
 }

@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: a6239b8d1fac04447b531cff5ae755af
+timeCreated: 1520448364
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box036
+    100002: Box038
+    100004: Box039
+    100006: Box041
+    100008: Box046
+    100010: Box053
+    100012: Box083
+    100014: Box084
+    100016: Box087
+    100018: Box102
+    100020: Box103
+    100022: Box105
+    100024: Box106
+    100026: Box107
+    100028: Box108
+    100030: Box109
+    100032: Box110
+    100034: Box112
+    100036: Box113
+    100038: Box114
+    100040: Box141
+    100042: Box144
+    100044: Box145
+    100046: coin_012
+    100048: Cone008
+    100050: endthing
+    100052: floor_1
+    100054: floor_2
+    100056: floor_3
+    100058: Object001
+    100060: rocks
+    100062: starter character
+    100064: structure
+    100066: structure 1
+    100068: tent
+    100070: Torus001
+    100072: //RootNode
+    100074: wall
+    100076: water
+    100078: well
+    100080: well 1
+    400000: Box036
+    400002: Box038
+    400004: Box039
+    400006: Box041
+    400008: Box046
+    400010: Box053
+    400012: Box083
+    400014: Box084
+    400016: Box087
+    400018: Box102
+    400020: Box103
+    400022: Box105
+    400024: Box106
+    400026: Box107
+    400028: Box108
+    400030: Box109
+    400032: Box110
+    400034: Box112
+    400036: Box113
+    400038: Box114
+    400040: Box141
+    400042: Box144
+    400044: Box145
+    400046: coin_012
+    400048: Cone008
+    400050: endthing
+    400052: floor_1
+    400054: floor_2
+    400056: floor_3
+    400058: Object001
+    400060: rocks
+    400062: starter character
+    400064: structure
+    400066: structure 1
+    400068: tent
+    400070: Torus001
+    400072: //RootNode
+    400074: wall
+    400076: water
+    400078: well
+    400080: well 1
+    2100000: No Name
+    2300000: Box036
+    2300002: Box038
+    2300004: Box039
+    2300006: Box041
+    2300008: Box046
+    2300010: Box053
+    2300012: Box083
+    2300014: Box084
+    2300016: Box087
+    2300018: Box102
+    2300020: Box103
+    2300022: Box105
+    2300024: Box106
+    2300026: Box107
+    2300028: Box108
+    2300030: Box109
+    2300032: Box110
+    2300034: Box112
+    2300036: Box113
+    2300038: Box114
+    2300040: Box141
+    2300042: Box144
+    2300044: Box145
+    2300046: coin_012
+    2300048: Cone008
+    2300050: Object001
+    2300052: starter character
+    2300054: Torus001
+    2300056: water
+    2300058: well 1
+    3300000: Box036
+    3300002: Box038
+    3300004: Box039
+    3300006: Box041
+    3300008: Box046
+    3300010: Box053
+    3300012: Box083
+    3300014: Box084
+    3300016: Box087
+    3300018: Box102
+    3300020: Box103
+    3300022: Box105
+    3300024: Box106
+    3300026: Box107
+    3300028: Box108
+    3300030: Box109
+    3300032: Box110
+    3300034: Box112
+    3300036: Box113
+    3300038: Box114
+    3300040: Box141
+    3300042: Box144
+    3300044: Box145
+    3300046: coin_012
+    3300048: Cone008
+    3300050: Object001
+    3300052: starter character
+    3300054: Torus001
+    3300056: water
+    3300058: well 1
+    4300000: Box107
+    4300002: Box110
+    4300004: Box103
+    4300006: Box102
+    4300008: Cone008
+    4300010: Object001
+    4300012: Box141
+    4300014: Box145
+    4300016: Box083
+    4300018: Box084
+    4300020: starter character
+    4300022: Box105
+    4300024: Box053
+    4300026: Box109
+    4300028: Box113
+    4300030: Box106
+    4300032: Box108
+    4300034: Box114
+    4300036: Box112
+    4300038: well
+    4300040: coin_012
+    4300042: water
+    4300044: Box036
+    4300046: Box046
+    4300048: Box039
+    4300050: Box038
+    4300052: Box041
+    4300054: Torus001
+    4300056: Box087
+    4300058: Box144
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

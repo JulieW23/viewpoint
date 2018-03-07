@@ -11,9 +11,13 @@ TagManager:
   - Coin
   - 2D
   - 3D
-  - 2D1
   - Box
   - Arch
+  - Rotatable
+  - Front
+  - Left
+  - Right
+  - Back
   layers:
   - Default
   - TransparentFX
