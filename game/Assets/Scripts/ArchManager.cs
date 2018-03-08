@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class ArchManager : MonoBehaviour {
 
+	public int minCoins;
+
 	// Use this for initialization
 	void Start () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (PlayerController.coinCount >= 2) {
+		if (PlayerController.coinCount >= minCoins) {
 			Behaviour halo = (Behaviour)GetComponent("Halo");
 			halo.enabled = true;
 		}
