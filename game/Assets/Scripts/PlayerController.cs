@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour {
 			// Teleport the User to the next scene
 			Debug.Log("player touch arch");
 			Debug.Log (coinCount.ToString());
-			SceneManager.LoadScene("Level2", LoadSceneMode.Additive);
+			SceneManager.LoadScene("Level2", LoadSceneMode.Single);
 			coinCount = 0;
 		}
 	}
