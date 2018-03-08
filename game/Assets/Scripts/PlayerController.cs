@@ -85,15 +85,15 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetAxis ("Horizontal") > 0) {
 			transform.position += transform.right * Time.deltaTime * movementSpeed;
 			TurnRight(1);
-		} else if (Input.GetAxis ("Horizontal") < 0) {
+		} if (Input.GetAxis ("Horizontal") < 0) {
 			transform.position += -transform.right * Time.deltaTime * movementSpeed;
 			TurnLeft(1);
-		} else if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
+		} if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 			transform.position += transform.forward * Time.deltaTime * movementSpeed;
-			TurnRight(1);
-		} else if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
+//			TurnRight(1);
+		} if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-			TurnLeft(1);
+//			TurnLeft(1);
 		} else {
 			// back to idle
 			if (left){
