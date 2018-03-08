@@ -831,7 +831,6 @@ GameObject:
   - component: {fileID: 265631296}
   - component: {fileID: 265631295}
   - component: {fileID: 265631294}
-  - component: {fileID: 265631297}
   m_Layer: 0
   m_Name: floor4
   m_TagString: Ground
@@ -909,21 +908,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 265631292}
   m_Mesh: {fileID: 4300034, guid: a6239b8d1fac04447b531cff5ae755af, type: 3}
---- !u!114 &265631297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 265631292}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pos3D: {x: -206.7926, y: -51.33426, z: 464.3853}
-  pos2D: {x: 14.65802, y: -51.33426, z: 464.3853}
-  timeTakenDuringLerp2D: 0.9
-  timeTakenDuringLerp3D: 1
 --- !u!1 &289524200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1499,7 @@ GameObject:
   - component: {fileID: 555103284}
   m_Layer: 0
   m_Name: coin_012
-  m_TagString: Ground
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3499,7 +3483,7 @@ GameObject:
   - component: {fileID: 1106191035}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3525,7 +3509,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1106191033}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
