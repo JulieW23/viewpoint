@@ -17,6 +17,7 @@ public class PositionPlayer : MonoBehaviour {
 	void OnTriggerStay(Collider collision){
 		if (collision.gameObject.name == "Player") {
 			GameObject player = collision.gameObject;
+//			Debug.Log ("move!");
 			if (x != 0) {
 				player.transform.position = new Vector3 (x, player.transform.position.y, player.transform.position.z);
 			}
