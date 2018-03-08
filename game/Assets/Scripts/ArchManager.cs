@@ -10,7 +10,7 @@ public class ArchManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (PlayerController.coinCount >= 1) {
+		if (PlayerController.coinCount >= 2) {
 			Behaviour halo = (Behaviour)GetComponent("Halo");
 			halo.enabled = true;
 		}
