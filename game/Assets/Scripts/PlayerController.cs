@@ -70,7 +70,9 @@ public class PlayerController : MonoBehaviour {
 
 		// respawn in start position if player falls off plane
 		if (transform.position.y < fallThreshold){
-			transform.position = startPosition;
+//			transform.position = startPosition;
+//			Destroy(gameObject);
+			Application.LoadLevel(Application.loadedLevel);
 		}
 		boxEncounter = 0;
 	}
