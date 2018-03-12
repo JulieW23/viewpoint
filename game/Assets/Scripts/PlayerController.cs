@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour {
 	private int boxEncounter = 0;
 	Animator player_anim;
 	private bool left, right; // animation direction
+	private bool play = false;
+	private bool quit = false;
 
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
@@ -73,6 +75,20 @@ public class PlayerController : MonoBehaviour {
 //			transform.position = startPosition;
 //			Destroy(gameObject);
 			Application.LoadLevel(Application.loadedLevel);
+		}
+
+		// Play button selected on the main menu
+		if (play) {
+			if (Input.GetButtonDown("Select")) {
+				SceneManager.LoadScene("Tutorial", LoadSceneMode.Single);
+			}
+		}
+
+		// Quit button selected on the main menu
+		if (quit) {
+			if (Input.GetButtonDown ("Select")) {
+				Application.Quit();
+			}
 		}
 		boxEncounter = 0;
 	}
@@ -167,6 +183,24 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log (coinCount.ToString());
 			SceneManager.LoadScene("Level2", LoadSceneMode.Single);
 			coinCount = 0;
+		}
+
+		if (other.gameObject.CompareTag("play")) {
+			play = true;
+		}
+
+		if (other.gameObject.CompareTag ("Quit")) {
+			quit = true;
+		}
+	}
+
+	void OnTriggerExit(Collider other) {
+		if (other.gameObject.CompareTag("play")) {
+			play = false;
+		}
+
+		if (other.gameObject.CompareTag("Quit")) {
+			quit = false;
 		}
 	}
 

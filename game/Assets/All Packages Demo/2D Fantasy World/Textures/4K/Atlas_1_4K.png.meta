@@ -1,0 +1,474 @@
+fileFormatVersion: 2
+guid: 853b4e05d001c294cb6dc12193819d8d
+timeCreated: 1502463442
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mountain_1
+    21300002: Mountain_1_without_moss
+    21300004: Mountain_2
+    21300006: Atlas_1_4K_3
+    21300008: Background_Magic_tree_5
+    21300010: Atlas_1_4K_5
+    21300012: Atlas_1_4K_6
+    21300014: Atlas_1_4K_7
+    21300016: Atlas_1_4K_8
+    21300018: Atlas_1_4K_9
+    21300020: Background_Magic_tree_1
+    21300022: Atlas_1_4K_11
+    21300024: Atlas_1_4K_12
+    21300026: Atlas_1_4K_13
+    21300028: Atlas_1_4K_14
+    21300030: Mountain_2_without_moss
+    21300032: Magic_tree_2_1
+    21300034: Magic_tree_2_2
+    21300036: Magic_tree_2
+    21300038: Atlas_1_4K_19
+    21300040: Atlas_1_4K_20
+    21300042: Magic_tree_1
+    21300044: Atlas_1_4K_22
+    21300046: Atlas_1_4K_23
+    21300048: Background_Magic_tree_2
+    21300050: Background_Magic_tree_3
+    21300052: Background_Magic_tree_4
+    21300054: Atlas_1_4K_27
+    21300056: Magic_tree_1_2
+    21300058: Foreground_mushrooms_1
+    21300060: Magic_tree_1_1
+    21300062: Vegetation_1
+    21300064: Atlas_1_4K_32
+    21300066: Atlas_1_4K_33
+    21300068: Vegetation_3
+    21300070: Vegetation_11
+    21300072: Atlas_1_4K_36
+    21300074: Vegetation_4
+    21300076: Mushroom_2
+    21300078: Vegetation_19
+    21300080: Vegetation_5
+    21300082: Atlas_1_4K_41
+    21300084: Foreground_mushrooms_3
+    21300086: Atlas_1_4K_43
+    21300088: Background_vegetation_3
+    21300090: Vegetation_16
+    21300092: Mushroom_1
+    21300094: Atlas_1_4K_47
+    21300096: Atlas_1_4K_48
+    21300098: Atlas_1_4K_49
+    21300100: Atlas_1_4K_50
+    21300102: Atlas_1_4K_51
+    21300104: Atlas_1_4K_52
+    21300106: Atlas_1_4K_53
+    21300108: Foreground_mushrooms_2
+    21300110: Atlas_1_4K_55
+    21300112: Atlas_1_4K_56
+    21300114: Vegetation_2
+    21300116: Mushroom_12
+    21300118: Background_vegetation_2
+    21300120: Mushroom_4
+    21300122: Atlas_1_4K_61
+    21300124: Atlas_1_4K_62
+    21300126: Atlas_1_4K_63
+    21300128: Atlas_1_4K_64
+    21300130: Atlas_1_4K_65
+    21300132: Atlas_1_4K_66
+    21300134: Atlas_1_4K_67
+    21300136: Vegetation_14
+    21300138: Mushroom_3
+    21300140: Vegetation_10
+    21300142: Vegetation_12
+    21300144: Atlas_1_4K_72
+    21300146: Background_vegetation_1
+    21300148: Vegetation_18
+    21300150: Background_vegetation_4
+    21300152: Mushroom_10
+    21300154: Mushroom_6
+    21300156: Mushroom_7
+    21300158: Mushroom_small_2
+    21300160: Atlas_1_4K_80
+    21300162: Atlas_1_4K_81
+    21300164: Vegetation_13
+    21300166: Mushroom_small_1
+    21300168: Atlas_1_4K_84
+    21300170: Atlas_1_4K_85
+    21300172: Atlas_1_4K_86
+    21300174: Atlas_1_4K_87
+    21300176: Atlas_1_4K_88
+    21300178: Atlas_1_4K_89
+    21300180: Vegetation_8
+    21300182: Vegetation_17
+    21300184: Moss_1
+    21300186: Moss_3
+    21300188: Vegetation_7
+    21300190: Atlas_1_4K_95
+    21300192: Atlas_1_4K_96
+    21300194: Mushroom_5
+    21300196: Atlas_1_4K_98
+    21300198: Vegetation_9
+    21300200: Mushroom_small_11
+    21300202: Atlas_1_4K_101
+    21300204: Atlas_1_4K_102
+    21300206: Atlas_1_4K_103
+    21300208: Mushroom_9
+    21300210: Vegetation_15
+    21300212: Mushroom_small_14
+    21300214: Mushroom_small_7
+    21300216: Atlas_1_4K_108
+    21300218: Moss_2
+    21300220: Mushroom_8
+    21300222: Atlas_1_4K_111
+    21300224: Mushroom_small_3
+    21300226: Mushroom_small_4
+    21300228: Atlas_1_4K_114
+    21300230: Vegetation_6
+    21300232: Mushroom_small_10
+    21300234: Mushroom_small_9
+    21300236: Mushroom_11
+    21300238: Mushroom_small_13
+    21300240: Mushroom_small_5
+    21300242: Mushroom_small_6
+    21300244: Atlas_1_4K_122
+    21300246: Mushroom_small_12
+    21300248: Rays
+    21300250: Sparkle
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Magic_tree_1_2
+      rect:
+        serializedVersion: 2
+        x: 5189
+        y: 4276
+        width: 749
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 314.5, y: -320.5}
+        - {x: 312.5, y: -285.5}
+        - {x: 265.5, y: -256.5}
+        - {x: 290.5, y: -234.5}
+        - {x: 319.5, y: -197.5}
+        - {x: 336.5, y: -154.5}
+        - {x: 322.5, y: -106.5}
+        - {x: 333.5, y: -70.5}
+        - {x: 334.5, y: -3.5}
+        - {x: 310.5, y: 77.5}
+        - {x: 329.5, y: 89.5}
+        - {x: 348.5, y: 119.5}
+        - {x: 353.5, y: 127.5}
+        - {x: 353.5, y: 129.5}
+        - {x: 354.5, y: 125.5}
+        - {x: 355.5, y: 122.5}
+        - {x: 358.5, y: 122.5}
+        - {x: 361.5, y: 125.5}
+        - {x: 362.5, y: 130.5}
+        - {x: 362.5, y: 133.5}
+        - {x: 360.5, y: 135.5}
+        - {x: 355.5, y: 139.5}
+        - {x: 359.5, y: 143.5}
+        - {x: 360.5, y: 152.5}
+        - {x: 362.5, y: 155.5}
+        - {x: 360.5, y: 150.5}
+        - {x: 360.5, y: 144.5}
+        - {x: 358.5, y: 142.5}
+        - {x: 357.5, y: 138.5}
+        - {x: 363.5, y: 135.5}
+        - {x: 374.5, y: 149.5}
+        - {x: 374.5, y: 256.5}
+        - {x: 353.5, y: 321.5}
+        - {x: 309.5, y: 379.5}
+        - {x: 303.5, y: 380.5}
+        - {x: 296.5, y: 377.5}
+        - {x: 295.5, y: 363.5}
+        - {x: 330.5, y: 255.5}
+        - {x: 317.5, y: 170.5}
+        - {x: 265.5, y: 129.5}
+        - {x: 243.5, y: 153.5}
+        - {x: 201.5, y: 183.5}
+        - {x: 154.5, y: 213.5}
+        - {x: 135.5, y: 249.5}
+        - {x: 69.5, y: 308.5}
+        - {x: 109.5, y: 387.5}
+        - {x: 102.5, y: 392.5}
+        - {x: 86.5, y: 392.5}
+        - {x: 30.5, y: 346.5}
+        - {x: 8.5, y: 307.5}
+        - {x: 31.5, y: 268.5}
+        - {x: -7.5, y: 274.5}
+        - {x: -9.5, y: 310.5}
+        - {x: -32.5, y: 322.5}
+        - {x: -50.5, y: 287.5}
+        - {x: -122.5, y: 288.5}
+        - {x: -187.5, y: 321.5}
+        - {x: -226.5, y: 365.5}
+        - {x: -247.5, y: 376.5}
+        - {x: -253.5, y: 344.5}
+        - {x: -286.5, y: 321.5}
+        - {x: -366.5, y: 368.5}
+        - {x: -374.5, y: 364.5}
+        - {x: -374.5, y: 341.5}
+        - {x: -331.5, y: 306.5}
+        - {x: -286.5, y: 289.5}
+        - {x: -194.5, y: 281.5}
+        - {x: -170.5, y: 266.5}
+        - {x: -59.5, y: 224.5}
+        - {x: -39.5, y: 123.5}
+        - {x: -8.5, y: 84.5}
+        - {x: 31.5, y: 57.5}
+        - {x: 84.5, y: 31.5}
+        - {x: 75.5, y: -41.5}
+        - {x: 21.5, y: -84.5}
+        - {x: 0.5, y: -110.5}
+        - {x: -18.5, y: -161.5}
+        - {x: -63.5, y: -180.5}
+        - {x: -94.5, y: -228.5}
+        - {x: -114.5, y: -218.5}
+        - {x: -163.5, y: -227.5}
+        - {x: -196.5, y: -262.5}
+        - {x: -217.5, y: -287.5}
+        - {x: -277.5, y: -287.5}
+        - {x: -298.5, y: -320.5}
+        - {x: -292.5, y: -338.5}
+        - {x: -283.5, y: -350.5}
+        - {x: -239.5, y: -358.5}
+        - {x: -148.5, y: -384.5}
+        - {x: -109.5, y: -392.5}
+        - {x: 100.5, y: -392.5}
+        - {x: 172.5, y: -375.5}
+        - {x: 271.5, y: -370.5}
+        - {x: 303.5, y: -349.5}
+      - - {x: -55.5, y: 181.5}
+        - {x: -57.5, y: 179.5}
+        - {x: -57.5, y: 177.5}
+        - {x: -55.5, y: 175.5}
+        - {x: -53.5, y: 175.5}
+        - {x: -51.5, y: 177.5}
+        - {x: -51.5, y: 179.5}
+        - {x: -53.5, y: 181.5}
+      - - {x: 160.5, y: 220.5}
+        - {x: 158.5, y: 218.5}
+        - {x: 158.5, y: 206.5}
+        - {x: 172.5, y: 193.5}
+        - {x: 179.5, y: 193.5}
+        - {x: 179.5, y: 207.5}
+        - {x: 170.5, y: 220.5}
+      - - {x: -46.5, y: 278.5}
+        - {x: -43.5, y: 279.5}
+        - {x: -43.5, y: 282.5}
+        - {x: -46.5, y: 283.5}
+        - {x: -48.5, y: 281.5}
+      - - {x: -102.5, y: 283.5}
+        - {x: -99.5, y: 284.5}
+        - {x: -99.5, y: 287.5}
+        - {x: -102.5, y: 288.5}
+        - {x: -104.5, y: 286.5}
+    - name: Mushroom_1
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 3373
+        width: 239
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: -120.5}
+        - {x: -72.5, y: -120.5}
+        - {x: -83.5, y: -134.5}
+        - {x: -83.5, y: -148.5}
+        - {x: -31.5, y: -148.5}
+        - {x: -31.5, y: -144.5}
+        - {x: -63.5, y: -122.5}
+      - - {x: 119.5, y: 44.5}
+        - {x: 107.5, y: 88.5}
+        - {x: 81.5, y: 147.5}
+        - {x: 0.5, y: 147.5}
+        - {x: -35.5, y: 134.5}
+        - {x: -68.5, y: 94.5}
+        - {x: -79.5, y: 90.5}
+        - {x: -119.5, y: 66.5}
+        - {x: -119.5, y: -63.5}
+        - {x: -118.5, y: -71.5}
+        - {x: -72.5, y: -109.5}
+        - {x: -65.5, y: -105.5}
+        - {x: -6.5, y: -140.5}
+        - {x: 9.5, y: -148.5}
+        - {x: 31.5, y: -148.5}
+        - {x: 44.5, y: -141.5}
+        - {x: 79.5, y: -123.5}
+        - {x: 102.5, y: -100.5}
+        - {x: 119.5, y: -26.5}
+    - name: Mushroom_4
+      rect:
+        serializedVersion: 2
+        x: 7343
+        y: 3316
+        width: 339
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 169.5, y: -69.5}
+        - {x: 168.5, y: -61.5}
+        - {x: 103.5, y: 72.5}
+        - {x: 93.5, y: 88.5}
+        - {x: -18.5, y: 88.5}
+        - {x: -74.5, y: 73.5}
+        - {x: -104.5, y: 83.5}
+        - {x: -132.5, y: 17.5}
+        - {x: -155.5, y: 11.5}
+        - {x: -169.5, y: -5.5}
+        - {x: -169.5, y: -107.5}
+        - {x: -158.5, y: -131.5}
+        - {x: -84.5, y: -190.5}
+        - {x: -37.5, y: -192.5}
+        - {x: 68.5, y: -192.5}
+        - {x: 104.5, y: -178.5}
+        - {x: 154.5, y: -150.5}
+        - {x: 169.5, y: -121.5}
+      - - {x: -104.5, y: 144.5}
+        - {x: -105.5, y: 143.5}
+        - {x: -105.5, y: 105.5}
+        - {x: -96.5, y: 95.5}
+        - {x: -27.5, y: 95.5}
+        - {x: -11.5, y: 100.5}
+        - {x: -17.5, y: 117.5}
+        - {x: -17.5, y: 118.5}
+        - {x: -15.5, y: 111.5}
+        - {x: -11.5, y: 104.5}
+        - {x: -6.5, y: 95.5}
+        - {x: 20.5, y: 95.5}
+        - {x: 32.5, y: 97.5}
+        - {x: 34.5, y: 107.5}
+        - {x: 34.5, y: 130.5}
+        - {x: 14.5, y: 144.5}
+      - - {x: -71.5, y: 145.5}
+        - {x: -65.5, y: 141.5}
+        - {x: -34.5, y: 141.5}
+        - {x: -21.5, y: 152.5}
+        - {x: -21.5, y: 181.5}
+        - {x: -24.5, y: 185.5}
+        - {x: -66.5, y: 185.5}
+        - {x: -71.5, y: 183.5}
+    - name: Vegetation_12
+      rect:
+        serializedVersion: 2
+        x: 4394
+        y: 2835
+        width: 344
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 146, y: 132.5}
+        - {x: 114, y: 104.5}
+        - {x: 107, y: 126.5}
+        - {x: 92, y: 143.5}
+        - {x: 63, y: 143.5}
+        - {x: 31, y: 121.5}
+        - {x: 5, y: 122.5}
+        - {x: -16, y: 106.5}
+        - {x: -21, y: 50.5}
+        - {x: -34, y: 65.5}
+        - {x: -66, y: 75.5}
+        - {x: -82, y: 43.5}
+        - {x: -102, y: 24.5}
+        - {x: -118, y: 40.5}
+        - {x: -166, y: 29.5}
+        - {x: -172, y: 13.5}
+        - {x: -172, y: -47.5}
+        - {x: -113, y: -129.5}
+        - {x: -76, y: -143.5}
+        - {x: -9, y: -143.5}
+        - {x: 38, y: -125.5}
+        - {x: 158, y: -24.5}
+        - {x: 172, y: 26.5}
+        - {x: 172, y: 110.5}
+    - name: Mushroom_6
+      rect:
+        serializedVersion: 2
+        x: 5178
+        y: 2782
+        width: 226
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 78.5}
+        - {x: 90, y: 65.5}
+        - {x: 107, y: 95.5}
+        - {x: 102, y: 106.5}
+        - {x: 42, y: 99.5}
+        - {x: -7, y: 75.5}
+        - {x: -20, y: 60.5}
+        - {x: -21, y: 57.5}
+        - {x: -21, y: 53.5}
+        - {x: -20, y: 50.5}
+        - {x: -21, y: 53.5}
+        - {x: -21, y: 55.5}
+        - {x: -24, y: 59.5}
+        - {x: -27, y: 58.5}
+        - {x: -34, y: 68.5}
+        - {x: 22, y: 96.5}
+        - {x: 25, y: 103.5}
+        - {x: 10, y: 110.5}
+        - {x: -27, y: 128.5}
+        - {x: -113, y: 128.5}
+        - {x: -113, y: -128.5}
+        - {x: 104, y: -128.5}
+        - {x: 113, y: -82.5}
+        - {x: 113, y: 45.5}
+        - {x: 112, y: 47.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

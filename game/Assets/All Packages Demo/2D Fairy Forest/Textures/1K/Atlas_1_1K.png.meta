@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 08ba9b493173dff4884cd9e532a0062b
+timeCreated: 1502456958
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ground
+    21300002: Tree_2_completed_3
+    21300004: Moss_3
+    21300006: Tree_1
+    21300008: Bush_5
+    21300010: Front_background
+    21300012: Moss_3
+    21300014: Branches_5
+    21300016: Sun_rays
+    21300018: Tree_2_without_moss
+    21300020: Background_Tree_1_1
+    21300022: Bush_6
+    21300024: Bush_2
+    21300026: Sparkle
+    21300028: Branches_3
+    21300030: Tree_1_fade
+    21300032: Bush_1
+    21300034: Tree_2_completed_2
+    21300036: Stone_1
+    21300038: Bush_8
+    21300040: Tree_2_without_light
+    21300042: Moss_4
+    21300044: Background_Tree_2_2
+    21300046: Moss_2
+    21300048: Background_Tree_2_1
+    21300050: Moss_1
+    21300052: Bush_7
+    21300054: Atlas_1_1K_64
+    21300056: Stone_2
+    21300058: Tree_2_completed_1
+    21300060: Tree_2_without_mushrooms
+    21300062: Stone_3
+    21300064: Branches_2
+    21300066: Stone_2_with_moss
+    21300068: Atlas_1_1K_74
+    21300070: Stone_1_with_moss
+    21300072: Stone_3_with_moss
+    21300074: Atlas_1_1K_78
+    21300076: Branches_1
+    21300078: Bush_4
+    21300080: Branches_4
+    21300082: Bush_3
+    21300084: Ground
+    21300086: Tree_2_without_moss
+    21300088: Branches_2
+    21300090: Bush_6
+    21300092: Front_background
+    21300094: Bush_5
+    21300096: Bush_3
+    21300098: Stone_5_without_moss
+    21300100: Branches_4
+    21300102: Tree_1
+    21300104: Sun_rays
+    21300106: Background_Tree_2_1
+    21300108: Bush_1
+    21300110: Moss_1
+    21300112: Stone_2_with_moss
+    21300114: Moss_3
+    21300116: Background_Tree_1_1
+    21300118: Bush_8
+    21300120: Tree_2_without_light
+    21300122: Stone_1_with_moss
+    21300124: Moss_4
+    21300126: Branches_1
+    21300128: Background_Tree_2_2
+    21300130: Moss_2
+    21300132: Tree_1_fade
+    21300134: Stone_2
+    21300136: Branches_3
+    21300138: Tree_2_without_mushrooms
+    21300140: Tree_2_completed_1
+    21300142: Tree_2_completed_3
+    21300144: Tree_2_completed_2
+    21300146: Bush_7
+    21300148: Stone_3_with_moss
+    21300150: Stone_3
+    21300152: Stone_1
+    21300154: Branches_5
+    21300156: Moss_1
+    21300158: Bush_4
+    21300160: Bush_2
+    21300162: Background_foliage_1
+    21300164: Background_foliage_2
+    21300166: Background_tree_2
+    21300168: Background_bush_2
+    21300170: Tree_3
+    21300172: Bush_8
+    21300174: Bush_1
+    21300176: Bush_7
+    21300178: Bush_2
+    21300180: Background_bush_1
+    21300182: Bush_6
+    21300184: Bush_5
+    21300186: Tree_1
+    21300188: Stone_2
+    21300190: Stone_3
+    21300192: Stone_5
+    21300194: Mushroom_2
+    21300196: Background_tree_1
+    21300198: Tree_2
+    21300200: Background_tree_3
+    21300202: Moss_2
+    21300204: Bush_9
+    21300206: Bush_3
+    21300208: Mushroom_1
+    21300210: Bush_4
+    21300212: Mushroom_4
+    21300214: Mushroom_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bush_6
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1311
+        width: 114
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 61}
+        - {x: -57, y: 34}
+        - {x: -57, y: -21}
+        - {x: -45, y: -58}
+        - {x: -32, y: -61}
+        - {x: 45, y: -61}
+        - {x: 57, y: -38}
+        - {x: 57, y: 48}
+        - {x: 43, y: 61}
+    - name: Stone_3
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1032
+        width: 322
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 161, y: 5.5}
+        - {x: 160, y: 14.5}
+        - {x: 143, y: 47.5}
+        - {x: 64, y: 63.5}
+        - {x: -130, y: 63.5}
+        - {x: -161, y: 28.5}
+        - {x: -161, y: -43.5}
+        - {x: -114, y: -54.5}
+        - {x: -18, y: -63.5}
+        - {x: 88, y: -63.5}
+        - {x: 127, y: -52.5}
+        - {x: 158, y: -37.5}
+        - {x: 161, y: -35.5}
+    - name: Bush_3
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 35
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: 31}
+        - {x: -56, y: -26}
+        - {x: -48, y: -31}
+        - {x: 46, y: -31}
+        - {x: 54, y: -27}
+        - {x: 56, y: -21}
+        - {x: 56, y: 22}
+        - {x: 51, y: 31}
+    - name: Mushroom_1
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 27
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 35}
+        - {x: -34, y: 12}
+        - {x: -34, y: -28}
+        - {x: -32, y: -30}
+        - {x: -15, y: -35}
+        - {x: 18, y: -35}
+        - {x: 34, y: -5}
+        - {x: 34, y: 31}
+        - {x: 22, y: 35}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

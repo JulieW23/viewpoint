@@ -18,6 +18,8 @@ TagManager:
   - Left
   - Right
   - Back
+  - play
+  - Quit
   layers:
   - Default
   - TransparentFX
