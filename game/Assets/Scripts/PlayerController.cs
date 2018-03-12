@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour {
 	private bool play = false;
 	private bool quit = false;
 
+	private Vector3 playerRotation;
+
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
 		rb = GetComponent<Rigidbody> (); // get the rigidbody of this player object
@@ -39,9 +41,11 @@ public class PlayerController : MonoBehaviour {
 		SetCountText();
 		player_anim = GetComponent<Animator>(); //get animator for animation
 		right = true;
+		playerRotation = transform.eulerAngles;
 	}
 
 	void Update () {
+		transform.eulerAngles = playerRotation;
 		// jump
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;

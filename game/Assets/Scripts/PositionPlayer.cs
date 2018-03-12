@@ -32,4 +32,8 @@ public class PositionPlayer : MonoBehaviour {
 			}
 		}
 	}
+
+	void OnTriggerExit(Collider collision){
+	
+	}
 }

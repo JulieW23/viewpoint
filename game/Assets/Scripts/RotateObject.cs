@@ -10,28 +10,57 @@ public class RotateObject : MonoBehaviour {
 	public Vector3 angle; // rotation angle
 	public float duration; // rotation duration
 	public bool showIndicator = false;
+	private int direction = 1;
+	WorldManager worldManager;
+	private Collider[] children;
+	public RotationPad rotationPad;
+	public ParticleSystem indicator;
 
 	void Start () {
-		halo = (Behaviour)GetComponent ("Halo"); // set halo reference
+//		halo = (Behaviour)GetComponent ("Halo"); // set halo reference
+		worldManager = worldManager = WorldManager.instance;
+		children = gameObject.GetComponentsInChildren<Collider> ();
+		indicator.Pause ();
 	}
 
 	void Update () {
-		// check if player is in range
-		float distanceFromPlayer = Vector3.Distance (transform.position, player.transform.position);
-		// if player is in range
-		if (distanceFromPlayer <= range) {
-			// turn on rotation indicator
-			halo.enabled = true;
+		if (rotationPad.rotatable) {
+			indicator.Play ();
 			// if player is in range and rotation key is pressed, rotate the object
-			if (Input.GetKeyDown (KeyCode.R)) {
+			if (Input.GetKeyDown (KeyCode.R) && !worldManager.mode2d) {
 				Debug.Log ("rotate!");
-				StartCoroutine(rotateObject(angle, duration));
+				StartCoroutine (rotateObject (angle, duration));
 			}
-		} 
-		// if player is not in range
-		else {
-			// turn off rotation indicator
-			halo.enabled = false;
+		} else {
+			indicator.Pause ();
+			indicator.Clear();
+		}
+
+		// handle colliders
+		if (worldManager.mode2d) {
+			for (int i = 0; i < children.Length; i++) {
+				if (direction == 1 && children [i].gameObject.tag == "Front") {
+					children [i].enabled = true;
+				} else if (direction == 2 && children [i].gameObject.tag == "Left") {
+					children [i].enabled = true;
+				} else if (direction == 3 && children [i].gameObject.tag == "Back") {
+					children [i].enabled = true;
+				} else if (direction == 4 && children [i].gameObject.tag == "Right") {
+					children [i].enabled = true;
+				} else {
+					if (children [i].gameObject.tag != "RotatePad") {
+						children [i].enabled = false;
+					}
+				}
+			}
+		} else {
+			for (int i = 0; i < children.Length; i++) {
+				if (children [i].gameObject.tag != "RotatePad") {
+					children [i].enabled = false;
+				}
+			}
+			Collider selfCol = gameObject.GetComponent<Collider> ();
+			selfCol.enabled = true;
 		}
 	}
 
@@ -64,6 +93,13 @@ public class RotateObject : MonoBehaviour {
 			transform.eulerAngles = Vector3.Lerp(currentRot, newRot, counter / duration);
 			yield return null;
 		}
+		if (direction >= 1 && direction <= 3) {
+			direction += 1;
+		} else if (direction == 4) {
+			direction = 1;
+		}
+		Debug.Log (direction);
+		transform.eulerAngles = newRot;
 		rotating = false;
 	}
 }
