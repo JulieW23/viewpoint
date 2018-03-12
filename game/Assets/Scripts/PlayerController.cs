@@ -28,7 +28,10 @@ public class PlayerController : MonoBehaviour {
 	Animator player_anim;
 	private bool left, right; // animation direction
 	private bool play = false;
+	private bool sound = false;
 	private bool quit = false;
+	private GameObject soundLight;
+	private Behaviour soundPointLight;
 
 	private Vector3 playerRotation;
 
@@ -45,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update () {
+
 		transform.eulerAngles = playerRotation;
 		// jump
 		if (grounded && Input.GetButtonDown("Jump")) {
@@ -80,18 +84,28 @@ public class PlayerController : MonoBehaviour {
 //			Destroy(gameObject);
 			Application.LoadLevel(Application.loadedLevel);
 		}
-
+			
 		// Play button selected on the main menu
 		if (play) {
 			if (Input.GetButtonDown("Select")) {
 				SceneManager.LoadScene("Tutorial", LoadSceneMode.Single);
 			}
 		}
-
+			
 		// Quit button selected on the main menu
 		if (quit) {
 			if (Input.GetButtonDown ("Select")) {
 				Application.Quit();
+			}
+		}
+			
+		// Sound button selected on the main menu.
+		if (sound) {
+			if (Input.GetButtonDown ("Select")) {
+				soundLight = GameObject.FindWithTag ("SoundLight");
+				soundPointLight = (Behaviour)soundLight.GetComponent ("Light");
+				soundPointLight.enabled = !soundPointLight.enabled;
+				AudioListener.pause = !AudioListener.pause;
 			}
 		}
 		boxEncounter = 0;
@@ -193,7 +207,11 @@ public class PlayerController : MonoBehaviour {
 			play = true;
 		}
 
-		if (other.gameObject.CompareTag ("Quit")) {
+		if (other.gameObject.CompareTag ("soundButton")) {
+			sound = true;
+		}
+
+		if (other.gameObject.CompareTag ("quitButton")) {
 			quit = true;
 		}
 	}
@@ -203,7 +221,11 @@ public class PlayerController : MonoBehaviour {
 			play = false;
 		}
 
-		if (other.gameObject.CompareTag("Quit")) {
+		if (other.gameObject.CompareTag ("soundButton")) {
+			sound = false;
+		}
+
+		if (other.gameObject.CompareTag("quitButton")) {
 			quit = false;
 		}
 	}
