@@ -18,6 +18,7 @@ TagManager:
   - Left
   - Right
   - Back
+  - RotatePad
   layers:
   - Default
   - TransparentFX

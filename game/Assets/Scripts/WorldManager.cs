@@ -140,17 +140,6 @@ public class WorldManager : MonoBehaviour {
 				col.enabled = false;
 				ren.enabled = false;
 			}
-			foreach (GameObject obj in rotatable) {
-				Collider col = obj.GetComponent<Collider> ();
-				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
-				for (int i = 0; i < child_col.Length; i++) {
-					if (child_col [i].gameObject.tag == "Front") {
-						child_col [i].enabled = true;
-					} else {
-						child_col [i].enabled = false;
-					}
-				}
-			}
 		}
 	}
 	
@@ -192,30 +181,5 @@ public class WorldManager : MonoBehaviour {
 				}
 			}
 		}
-		// rotatable
-//		foreach (GameObject obj in rotatable){
-//			Collider col = obj.GetComponent<Collider> ();
-//			Collider[] all_col = obj.GetComponentsInChildren<Collider> ();
-//			if (mode2d) {
-//				for (int i = 0; i < all_col.Length; i++) {
-//					if (obj.transform.eulerAngles.z == front && all_col [i].gameObject.tag == "Front") {
-//						all_col [i].enabled = true;
-//					} else if (obj.transform.eulerAngles.z == left && all_col [i].gameObject.tag == "Left") {
-//						all_col [i].enabled = true;
-//					} else if (obj.transform.eulerAngles.z == right && all_col [i].gameObject.tag == "Right") {
-//						all_col [i].enabled = true;
-//					} else if (obj.transform.eulerAngles.z == back && all_col [i].gameObject.tag == "Back") {
-//						all_col [i].enabled = true;
-//					} else {
-//						all_col [i].enabled = false;
-//					}
-//				}
-//			} else {
-//				for (int i = 0; i < all_col.Length; i++) {
-//					all_col [i].enabled = false;
-//				}
-//				col.enabled = true;
-//			}
-//		}
 	}
 }
