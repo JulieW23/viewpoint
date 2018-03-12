@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 0d17c79ab0ebb5c42af80a3c0cf72818
+timeCreated: 1503308947
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Front_background_3
+    21300002: Ground_3
+    21300004: Moss_1
+    21300006: Sparkle
+    21300008: Tree_4
+    21300010: Tree_2
+    21300012: Tree_6
+    21300014: Tree_1_light
+    21300016: Bush_5
+    21300018: Moss_3
+    21300020: Stone_2
+    21300022: Bush_1
+    21300024: Tree_3_light
+    21300026: Tree_2_light
+    21300028: Moss_5
+    21300030: Stone_4_without_moss
+    21300032: Atlas_1_1K_21
+    21300034: Tree_5
+    21300036: Background_tree_2
+    21300038: Background_tree_3
+    21300040: Ground_1_without_moss
+    21300042: Bush_6
+    21300044: Tree_1
+    21300046: Moon_rays_1
+    21300048: Tree_3_super_light
+    21300050: Tree_3
+    21300052: Stone_2_without_moss
+    21300054: Ground_2
+    21300056: Moss_6
+    21300058: Stone_3
+    21300060: Front_background_2
+    21300062: Ground_1
+    21300064: Front_background_1
+    21300066: Stone_3_without_moss
+    21300068: Bush_2
+    21300070: Bush_4
+    21300072: Stone_4
+    21300074: Moss_2
+    21300076: Ground_2_without_moss
+    21300078: Moss_4
+    21300080: Ground_3_without_moss
+    21300082: Bush_3
+    21300084: Stone_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Stone_2
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1415
+        width: 251
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: -92.5}
+        - {x: -48.5, y: -94.5}
+        - {x: -42.5, y: -94.5}
+        - {x: -42.5, y: -92.5}
+        - {x: -44.5, y: -90.5}
+        - {x: -46.5, y: -90.5}
+      - - {x: -23.5, y: 94.5}
+        - {x: -18.5, y: 81.5}
+        - {x: -25.5, y: 65.5}
+        - {x: -25.5, y: 61.5}
+        - {x: -21.5, y: 57.5}
+        - {x: -26.5, y: 56.5}
+        - {x: -26.5, y: 65.5}
+        - {x: -29.5, y: 66.5}
+        - {x: -20.5, y: 75.5}
+        - {x: -20.5, y: 85.5}
+        - {x: -38.5, y: 94.5}
+        - {x: -108.5, y: 94.5}
+        - {x: -125.5, y: 34.5}
+        - {x: -125.5, y: -90.5}
+        - {x: 114.5, y: -90.5}
+        - {x: 125.5, y: -61.5}
+        - {x: 125.5, y: 14.5}
+        - {x: 73.5, y: 94.5}
+    - name: Bush_1
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1456
+        width: 101
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.5, y: 74}
+        - {x: -50.5, y: 48}
+        - {x: -38.5, y: 33}
+        - {x: -33.5, y: 35}
+        - {x: -32.5, y: 32}
+        - {x: -32.5, y: 33}
+        - {x: -36.5, y: 33}
+        - {x: -38.5, y: 31}
+        - {x: -50.5, y: 10}
+        - {x: -50.5, y: 3}
+        - {x: -42.5, y: -5}
+        - {x: -40.5, y: -15}
+        - {x: -39.5, y: -14}
+        - {x: -42.5, y: -15}
+        - {x: -50.5, y: -12}
+        - {x: -50.5, y: -55}
+        - {x: -24.5, y: -74}
+        - {x: 31.5, y: -74}
+        - {x: 41.5, y: -70}
+        - {x: 50.5, y: -31}
+        - {x: 50.5, y: 31}
+        - {x: 15.5, y: 74}
+    - name: Tree_3_light
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844
+        width: 442
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: -235.5}
+        - {x: 129, y: -221.5}
+        - {x: 185, y: -219.5}
+        - {x: 200, y: -210.5}
+        - {x: 199, y: -208.5}
+        - {x: 195, y: -204.5}
+        - {x: 193, y: -204.5}
+        - {x: 192, y: -205.5}
+        - {x: 189, y: -205.5}
+        - {x: 196, y: -203.5}
+        - {x: 197, y: -206.5}
+        - {x: 204, y: -211.5}
+        - {x: 221, y: -169.5}
+        - {x: 221, y: -112.5}
+        - {x: 220, y: -103.5}
+        - {x: 195, y: -76.5}
+        - {x: 111, y: -47.5}
+        - {x: 72, y: 44.5}
+        - {x: 85, y: 82.5}
+        - {x: 81, y: 173.5}
+        - {x: 67, y: 232.5}
+        - {x: 63, y: 236.5}
+        - {x: -58, y: 236.5}
+        - {x: -67, y: 235.5}
+        - {x: -101, y: 174.5}
+        - {x: -96, y: 109.5}
+        - {x: -91, y: -24.5}
+        - {x: -134, y: -86.5}
+        - {x: -166, y: -91.5}
+        - {x: -216, y: -129.5}
+        - {x: -221, y: -158.5}
+        - {x: -221, y: -204.5}
+        - {x: -219, y: -214.5}
+        - {x: -216, y: -224.5}
+        - {x: -142, y: -206.5}
+        - {x: -94, y: -176.5}
+        - {x: -66, y: -236.5}
+        - {x: 0, y: -236.5}
+        - {x: 13, y: -222.5}
+        - {x: 25, y: -178.5}
+        - {x: 75, y: -222.5}
+      - - {x: 53, y: -193.5}
+        - {x: 53, y: -195.5}
+        - {x: 57, y: -201.5}
+        - {x: 59, y: -201.5}
+        - {x: 61, y: -200.5}
+        - {x: 61, y: -194.5}
+        - {x: 59, y: -192.5}
+        - {x: 55, y: -191.5}
+      - - {x: -125, y: -186.5}
+        - {x: -126, y: -191.5}
+        - {x: -124, y: -193.5}
+        - {x: -123, y: -193.5}
+        - {x: -120, y: -190.5}
+        - {x: -120, y: -187.5}
+        - {x: -122, y: -185.5}
+    - name: Moss_5
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1183
+        width: 322
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 75.5}
+        - {x: -43, y: 63.5}
+        - {x: -43, y: 55.5}
+        - {x: -43, y: 61.5}
+        - {x: -54, y: 71.5}
+        - {x: -68, y: 75.5}
+        - {x: -92, y: 75.5}
+        - {x: -108, y: 58.5}
+        - {x: -100, y: 47.5}
+        - {x: -96, y: 47.5}
+        - {x: -156, y: 12.5}
+        - {x: -161, y: 5.5}
+        - {x: -161, y: -52.5}
+        - {x: -138, y: -75.5}
+        - {x: 161, y: -75.5}
+        - {x: 161, y: -2.5}
+        - {x: 13, y: 75.5}
+    - name: Bush_4
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 226
+        width: 85
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.5, y: 65}
+        - {x: -42.5, y: 0}
+        - {x: -16.5, y: -65}
+        - {x: 15.5, y: -65}
+        - {x: 42.5, y: -56}
+        - {x: 42.5, y: 53}
+        - {x: 18.5, y: 65}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

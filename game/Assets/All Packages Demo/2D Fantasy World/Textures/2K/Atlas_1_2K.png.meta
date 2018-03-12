@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 969e7fb917b03264181c6aa49a331975
+timeCreated: 1502463152
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rays
+    21300002: Foreground_mushrooms_2
+    21300004: Background_Magic_tree_2
+    21300006: Vegetation_5
+    21300008: Vegetation_16
+    21300010: Mushroom_5
+    21300012: Vegetation_9
+    21300014: Moss_3
+    21300016: Mushroom_small_8
+    21300018: Background_Magic_tree_5
+    21300020: Foreground_mushrooms_1
+    21300022: Vegetation_3
+    21300024: Mushroom_small_11
+    21300026: Background_vegetation_3
+    21300028: Mushroom_4
+    21300030: Vegetation_11
+    21300032: Vegetation_12
+    21300034: Mushroom_small_4
+    21300036: Background_Magic_tree_4
+    21300038: Mushroom_small_6
+    21300040: Sparkle
+    21300042: Vegetation_19
+    21300044: Vegetation_14
+    21300046: Mushroom_8
+    21300048: Mushroom_7
+    21300050: Background_Magic_tree_1
+    21300052: Mountain_1
+    21300054: Background_Magic_tree_3
+    21300056: Magic_tree_1
+    21300058: Background_vegetation_4
+    21300060: Mushroom_small_1
+    21300062: Mushroom_9
+    21300064: Mushroom_small_14
+    21300066: Moss_1
+    21300068: Vegetation_8
+    21300070: Vegetation_17
+    21300072: Mushroom_small_3
+    21300074: Magic_tree_2_2
+    21300076: Foreground_mushrooms_3
+    21300078: Magic_tree_1_1
+    21300080: Mushroom_6
+    21300082: Mountain_1_without_moss
+    21300084: Mushroom_small_2
+    21300086: Mushroom_11
+    21300088: Magic_tree_2_1
+    21300090: Mushroom_10
+    21300092: Mushroom_small_5
+    21300094: Magic_tree_2
+    21300096: Vegetation_18
+    21300098: Vegetation_4
+    21300100: Mushroom_small_7
+    21300102: Vegetation_10
+    21300104: Vegetation_2
+    21300106: Vegetation_15
+    21300108: Moss_2
+    21300110: Mushroom_small_13
+    21300112: Mushroom_small_12
+    21300114: Mountain_2_without_moss
+    21300116: Mountain_2
+    21300118: Magic_tree_1_2
+    21300120: Vegetation_1
+    21300122: Mushroom_2
+    21300124: Background_vegetation_2
+    21300126: Mushroom_small_9
+    21300128: Background_vegetation_1
+    21300130: Mushroom_3
+    21300132: Vegetation_13
+    21300134: Mushroom_1
+    21300136: Vegetation_7
+    21300138: Mushroom_small_10
+    21300140: Vegetation_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mushroom_4
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 2666
+        width: 178
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85, y: 58}
+        - {x: -89, y: 47}
+        - {x: -89, y: -125}
+        - {x: 89, y: -125}
+        - {x: 89, y: -34}
+        - {x: 64, y: 58}
+      - - {x: -46, y: 100}
+        - {x: -48, y: 94}
+        - {x: -48, y: 74}
+        - {x: -35, y: 67}
+        - {x: -8, y: 62}
+        - {x: 26, y: 62}
+        - {x: 26, y: 91}
+        - {x: -10, y: 100}
+      - - {x: -23, y: 125}
+        - {x: -29, y: 116}
+        - {x: -29, y: 102}
+        - {x: -19, y: 95}
+        - {x: -10, y: 95}
+        - {x: -2, y: 102}
+        - {x: -2, y: 117}
+        - {x: -5, y: 125}
+    - name: Vegetation_12
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 2482
+        width: 172
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 72}
+        - {x: -9, y: 54}
+        - {x: -7, y: 36}
+        - {x: -6, y: 31}
+        - {x: -22, y: 38}
+        - {x: -38, y: 33}
+        - {x: -72, y: 26}
+        - {x: -86, y: 17}
+        - {x: -86, y: -27}
+        - {x: -74, y: -58}
+        - {x: -62, y: -72}
+        - {x: 10, y: -72}
+        - {x: 81, y: -43}
+        - {x: 86, y: -26}
+        - {x: 86, y: 70}
+        - {x: 81, y: 72}
+    - name: Mushroom_6
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 1325
+        width: 114
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 42.5}
+        - {x: 15, y: 49.5}
+        - {x: 8, y: 62.5}
+        - {x: -4, y: 64.5}
+        - {x: -57, y: 64.5}
+        - {x: -57, y: -57.5}
+        - {x: -53, y: -64.5}
+        - {x: 57, y: -64.5}
+        - {x: 57, y: 54.5}
+        - {x: 21, y: 49.5}
+    - name: Magic_tree_1_2
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 226
+        width: 375
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 146.5, y: 196.5}
+        - {x: 144.5, y: 181.5}
+        - {x: 131.5, y: 77.5}
+        - {x: 57.5, y: 160.5}
+        - {x: 57.5, y: 196.5}
+        - {x: 36.5, y: 196.5}
+        - {x: 27.5, y: 188.5}
+        - {x: 7.5, y: 161.5}
+        - {x: 3.5, y: 150.5}
+        - {x: -3.5, y: 156.5}
+        - {x: -11.5, y: 159.5}
+        - {x: -16.5, y: 158.5}
+        - {x: -55.5, y: 167.5}
+        - {x: -130.5, y: 196.5}
+        - {x: -187.5, y: 196.5}
+        - {x: -187.5, y: 158.5}
+        - {x: -53.5, y: 89.5}
+        - {x: -8.5, y: 32.5}
+        - {x: 4.5, y: -51.5}
+        - {x: -90.5, y: -95.5}
+        - {x: -170.5, y: -173.5}
+        - {x: -82.5, y: -196.5}
+        - {x: 76.5, y: -196.5}
+        - {x: 158.5, y: -189.5}
+        - {x: 187.5, y: -2.5}
+        - {x: 187.5, y: 171.5}
+        - {x: 153.5, y: 196.5}
+      - - {x: -27.5, y: 87.5}
+        - {x: -24.5, y: 88.5}
+        - {x: -24.5, y: 91.5}
+        - {x: -27.5, y: 92.5}
+        - {x: -29.5, y: 90.5}
+    - name: Mushroom_1
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 135
+        width: 120
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: -55}
+        - {x: -36, y: -55}
+        - {x: -43, y: -62}
+        - {x: -43, y: -74}
+        - {x: -37, y: -75}
+        - {x: -21, y: -75}
+        - {x: -17, y: -71}
+        - {x: -17, y: -67}
+      - - {x: 41, y: 77}
+        - {x: -40, y: 77}
+        - {x: -60, y: 71}
+        - {x: -60, y: -60}
+        - {x: -14, y: -72}
+        - {x: 38, y: -72}
+        - {x: 58, y: -48}
+        - {x: 60, y: -17}
+        - {x: 60, y: 42}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
