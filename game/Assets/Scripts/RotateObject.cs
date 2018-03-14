@@ -26,7 +26,7 @@ public class RotateObject : MonoBehaviour {
 	void Update () {
 		if (rotationPad.rotatable) {
 			indicator.Play ();
-			if (Input.GetKeyDown (KeyCode.R) && !worldManager.mode2d) {
+			if (Input.GetButtonDown ("Rotate") && !worldManager.mode2d) {
 				Debug.Log ("rotate!");
 				StartCoroutine (rotateObject (angle, duration));
 			}
