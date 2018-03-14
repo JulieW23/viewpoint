@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour {
 
-	public float range; // player must be within this range to rotate this object
-	public GameObject player; // reference to player
+//	public float range; // player must be within this range to rotate this object
+//	public GameObject player; // reference to player
 	Behaviour halo; // reference to halo
 	public Vector3 angle; // rotation angle
 	public float duration; // rotation duration
@@ -26,7 +26,6 @@ public class RotateObject : MonoBehaviour {
 	void Update () {
 		if (rotationPad.rotatable) {
 			indicator.Play ();
-			// if player is in range and rotation key is pressed, rotate the object
 			if (Input.GetKeyDown (KeyCode.R) && !worldManager.mode2d) {
 				Debug.Log ("rotate!");
 				StartCoroutine (rotateObject (angle, duration));
@@ -65,12 +64,12 @@ public class RotateObject : MonoBehaviour {
 	}
 
 	// indicate range in scene for easier adjustments
-	void OnDrawGizmosSelected(){
-		if (showIndicator) {
-			Gizmos.color = Color.red;
-			Gizmos.DrawWireSphere (transform.position, range);
-		}
-	}
+//	void OnDrawGizmosSelected(){
+//		if (showIndicator) {
+//			Gizmos.color = Color.red;
+//			Gizmos.DrawWireSphere (transform.position, range);
+//		}
+//	}
 
 	// rotates object
 	bool rotating = false;
