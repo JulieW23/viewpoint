@@ -17,12 +17,13 @@ public class PlayerController : MonoBehaviour {
 	public float fallThreshold; // how far the player falls before respawning
 	private Vector3 startGravity;
 	public float hopHeight = 0.2f;
-
+	public static int coinCount; // count the coins collected
+	public Text countText;
+	public Text orbLeftText;
+	public int orbsToPass = 1;
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
-	public static int coinCount; // count the coins collected
-	public Text countText;
 	WorldManager worldManager; // reference to WorldManager
 	private int boxEncounter = 0;
 	Animator player_anim;
@@ -110,11 +111,6 @@ public class PlayerController : MonoBehaviour {
 		}
 		boxEncounter = 0;
 	}
-	void hopping(){
-		if (boxEncounter == 0){
-			transform.position += transform.up * hopHeight;	
-		}
-	}
 	void FixedUpdate() {
 		speed = rb.velocity.y;
 		// player movement
@@ -156,7 +152,6 @@ public class PlayerController : MonoBehaviour {
 		right = true;
 	}
 
-
 	// return true if player is allowed to jump again
 	// (helps prevent infinite jumping)
 	void OnCollisionStay(Collision col){
@@ -195,7 +190,7 @@ public class PlayerController : MonoBehaviour {
 			SetCountText();
 		}
 
-		if (coinCount >= 2 && other.gameObject.CompareTag ("Arch")) {
+		if (coinCount >= orbsToPass && other.gameObject.CompareTag ("Arch")) {
 			// Teleport the User to the next scene
 			Debug.Log("player touch arch");
 			Debug.Log (coinCount.ToString());
@@ -231,8 +226,12 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void SetCountText(){
-		countText.text = "Coins collected: " + coinCount.ToString();
+		int orbLeft = orbsToPass-coinCount;
+		countText.text = "Orbs collected: " + coinCount.ToString();
+		if (orbLeft < 0){
+			orbLeft = 0;
+		}
+		orbLeftText.text = "To unlock the portal: " + orbLeft.ToString();
 	}
-
 
 }
