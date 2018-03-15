@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour {
 			//player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
 		}
 
-		if (rb.velocity.y > 0.1 || rb.velocity.y < -0.1) {
+		if (rb.velocity.y > 8 || rb.velocity.y < -8) {
 			grounded = false;
 		}
 		// glide
@@ -159,7 +159,7 @@ public class PlayerController : MonoBehaviour {
 //		Debug.Log (rb.velocity.y);
 //		Debug.Log (col.transform.tag);
 //		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D") {
-		if ((rb.velocity.y < 0.1 && rb.velocity.y > -0.1) && (col.transform.tag == "MeshDiff" || 
+		if ((rb.velocity.y < 8 && rb.velocity.y > -8) && (col.transform.tag == "MeshDiff" || 
 			col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || 
 			col.transform.tag == "2D" || col.transform.tag == "3D" || 
 			col.transform.tag == "Rotatable" || col.transform.tag == "Front" || 
