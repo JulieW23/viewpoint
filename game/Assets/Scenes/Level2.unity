@@ -8513,7 +8513,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510400202}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -1.0410428, y: 34.99993, z: -95.00001}
+  m_LocalPosition: {x: -1.0410428, y: 34.99993, z: -91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1660448292}
@@ -9148,7 +9148,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 940583436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -86.3, y: 66.52571, z: -90}
+  m_LocalPosition: {x: -86.3, y: 66.52571, z: -86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1056384083}
@@ -16320,7 +16320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68a8c962ec738f42a9a2e696709759d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin2D_pos: {x: -17.1, y: 80, z: -90}
+  coin2D_pos: {x: -16.3, y: 66.52571, z: -86}
   coin2D_collider: {x: 10, y: 8, z: 8}
   timeTakenDuringLerp2D: 1
   timeTakenDuringLerp3D: 1
