@@ -183,6 +183,7 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			coinCount += 1;
 			SetCountText();
+			FindObjectOfType<AudioManager>().Play("OrbCollect");
 		}
 
 		if (coinCount >= orbsToPass && other.gameObject.CompareTag ("Arch")) {

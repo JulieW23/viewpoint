@@ -27,6 +27,7 @@ public class RotateObject : MonoBehaviour {
 		if (rotationPad.rotatable) {
 			indicator.Play ();
 			if (Input.GetButtonDown ("Rotate") && !worldManager.mode2d) {
+				FindObjectOfType<AudioManager>().Play("Rotation");
 				Debug.Log ("rotate!");
 				StartCoroutine (rotateObject (angle, duration));
 			}
