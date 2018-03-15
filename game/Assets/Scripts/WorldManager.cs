@@ -147,6 +147,7 @@ public class WorldManager : MonoBehaviour {
 	void Update () {
 		// switch 2d/3d mode when key is pressed
 		if (Input.GetButtonDown ("Change Perspective")) {
+			FindObjectOfType<AudioManager>().Play("SwitchPerspective");
 			// update mode
 			mode2d = !mode2d;
 

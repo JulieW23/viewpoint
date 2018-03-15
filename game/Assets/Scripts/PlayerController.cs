@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 	public static int coinCount; // count the coins collected
 	public Text countText;
 	public Text orbLeftText;
-	public int orbsToPass = 1;
+	public int orbsToPass = 2;
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
@@ -184,14 +184,23 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			coinCount += 1;
 			SetCountText();
+			FindObjectOfType<AudioManager>().Play("OrbCollect");
 		}
 
 		if (coinCount >= orbsToPass && other.gameObject.CompareTag ("Arch")) {
 			// Teleport the User to the next scene
-			Debug.Log("player touch arch");
-			Debug.Log (coinCount.ToString());
-			SceneManager.LoadScene("Level2", LoadSceneMode.Single);
+			Debug.Log ("player touch arch");
+			Debug.Log (coinCount.ToString ());
+			SceneManager.LoadScene ("Level2", LoadSceneMode.Single);
 			coinCount = 0;
+			orbsToPass = 3;
+		}
+
+		if (coinCount >= orbsToPass && other.gameObject.CompareTag("Arch2")) {
+			Debug.Log ("player touch arch");
+			SceneManager.LoadScene ("Level3", LoadSceneMode.Single);
+			coinCount = 0;
+			orbsToPass = 1;
 		}
 
 		if (other.gameObject.CompareTag("play")) {
