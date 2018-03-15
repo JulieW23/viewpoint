@@ -157,7 +157,8 @@ public class PlayerController : MonoBehaviour {
 			col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || 
 			col.transform.tag == "2D" || col.transform.tag == "3D" || 
 			col.transform.tag == "Rotatable" || col.transform.tag == "Front" || 
-			col.transform.tag == "Left" || col.transform.tag == "Right" || col.transform.tag == "Back")) {
+			col.transform.tag == "Left" || col.transform.tag == "Right" || col.transform.tag == "Back" || 
+			col.transform.tag == "RotatePad")) {
 			grounded = true;
 			// Debug.Log ("Grounded again");
 		} 
