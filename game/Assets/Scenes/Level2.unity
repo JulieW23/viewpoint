@@ -18240,6 +18240,16 @@ Prefab:
       propertyPath: glidingEnabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95945638832925714, guid: 45b5926760b2345299875cf498f49c7f,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7e8e03d9e930d3f4997acec7b675c84b, type: 2}
+    - target: {fileID: 95945638832925714, guid: 45b5926760b2345299875cf498f49c7f,
+        type: 2}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45b5926760b2345299875cf498f49c7f, type: 2}
   m_IsPrefabParent: 0

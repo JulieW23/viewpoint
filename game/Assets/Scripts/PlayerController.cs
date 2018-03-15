@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour {
 		coinCount = 0;
 		SetCountText();
 		player_anim = GetComponent<Animator>(); //get animator for animation
+		if (player_anim == null){
+			Debug.Log("has animator!");
+		}
 		right = true;
 	}
 
@@ -132,6 +135,9 @@ public class PlayerController : MonoBehaviour {
 	}
 	// Turn left with corresponded state
 	void TurnLeft(int state){
+		if (player_anim == null){
+			Debug.Log("it's null");
+		}
 		player_anim.SetInteger("State", state);
 		if (left){ return ;}
 		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
