@@ -17,8 +17,7 @@ public class RotateObject : MonoBehaviour {
 	public ParticleSystem indicator;
 
 	void Start () {
-//		halo = (Behaviour)GetComponent ("Halo"); // set halo reference
-		worldManager = worldManager = WorldManager.instance;
+		worldManager = WorldManager.instance;
 		children = gameObject.GetComponentsInChildren<Collider> ();
 		indicator.Pause ();
 	}
