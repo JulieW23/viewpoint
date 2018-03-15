@@ -198,7 +198,7 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log ("player touch arch");
 			SceneManager.LoadScene ("Level3", LoadSceneMode.Single);
 			coinCount = 0;
-			orbsToPass = 6;
+			orbsToPass = 1;
 		}
 
 		if (other.gameObject.CompareTag("play")) {
