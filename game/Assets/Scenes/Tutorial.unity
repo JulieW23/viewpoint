@@ -9199,6 +9199,11 @@ Prefab:
       propertyPath: orbLeftText
       value: 
       objectReference: {fileID: 1587947183}
+    - target: {fileID: 114973593224931140, guid: 45b5926760b2345299875cf498f49c7f,
+        type: 2}
+      propertyPath: orbsToPass
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45b5926760b2345299875cf498f49c7f, type: 2}
   m_IsPrefabParent: 0

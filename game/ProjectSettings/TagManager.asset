@@ -26,6 +26,8 @@ TagManager:
   - soundButton
   - quitButton
   - audioSource
+  - Arch2
+  - NewArch
   layers:
   - Default
   - TransparentFX
