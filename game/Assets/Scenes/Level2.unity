@@ -16650,9 +16650,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1054177286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f38ff669fef4499bec58e8cf987496, type: 3}
+  m_Script: {fileID: 11500000, guid: 101908cd6b16b4943b2aa2bdd5e8611e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minCoins: 3
 --- !u!135 &1054177288
 SphereCollider:
   m_ObjectHideFlags: 0
