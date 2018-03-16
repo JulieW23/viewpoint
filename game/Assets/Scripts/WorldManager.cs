@@ -19,9 +19,6 @@ public class WorldManager : MonoBehaviour {
 	private GameObject[] changeCol; 
 	// array of all objects that need mesh altered when view switches
 	private GameObject[] changeMesh;
-	// array of all objects that can be rotated
-	private GameObject[] rotatable;
-//	private GameObject[] teleport;
 
 	void Awake(){
 		// make sure there is only once instance of WorldManager
@@ -37,7 +34,6 @@ public class WorldManager : MonoBehaviour {
 		// get objects by tag
 		changeCol = GameObject.FindGameObjectsWithTag("ColliderDiff");
 		changeMesh = GameObject.FindGameObjectsWithTag ("MeshDiff");
-		rotatable = GameObject.FindGameObjectsWithTag ("Rotatable");
 
 		// use the correct colliders
 		if (!mode2d) { //3d
@@ -84,19 +80,6 @@ public class WorldManager : MonoBehaviour {
 				}
 				col.enabled = true;
 				ren.enabled = true;
-			}
-			// ***** ROTATABLE *****
-			// for all objects that are rotatable
-			foreach (GameObject obj in rotatable){
-				// get the collider of the object
-				Collider col  = obj.GetComponent<Collider>();
-				Collider[] child_col = obj.GetComponentsInChildren<Collider> ();
-				// disable all children's colliders
-				for (int i = 0; i < child_col.Length; i++) {
-					child_col [i].enabled = false;
-				}
-				// enable it's own collider
-				col.enabled = true;
 			}
 				
 		} else if (mode2d) { //2d

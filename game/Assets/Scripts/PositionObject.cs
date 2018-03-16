@@ -25,14 +25,12 @@ public class PositionObject : MonoBehaviour {
 
 	void FixedUpdate(){
 		if (worldManager.mode2d) {
-//			transform.position = pos2D;
 			if(transform.position != pos2D){
 				float timeSinceStarted = Time.time - timeStartedLerping;
 				float percentageComplete = timeSinceStarted / timeTakenDuringLerp2D;
 				transform.position = Vector3.Lerp(pos3D, pos2D, percentageComplete);
 			}
 		} else {
-			//transform.position = pos3D;
 			if (transform.position != pos3D){
 				float timeSinceStarted = Time.time - timeStartedLerping;
 				float percentageComplete = timeSinceStarted / timeTakenDuringLerp3D;

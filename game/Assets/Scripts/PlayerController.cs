@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 	public int orbsToPass = 2;
 	private Rigidbody rb; // reference to rigidbody of this player
 	private bool grounded = true; // true iff player is not in the air
-	//private Vector3 startPosition; // start position of player
+
 	WorldManager worldManager; // reference to WorldManager
 	Animator player_anim;
 	private bool left, right; // animation direction
@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour {
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
 		rb = GetComponent<Rigidbody> (); // get the rigidbody of this player object
-		//startPosition = transform.position; // store the start position of the player
 		startGravity = Physics.gravity;
 		coinCount = 0;
 		SetCountText();
@@ -77,8 +76,6 @@ public class PlayerController : MonoBehaviour {
 
 		// respawn in start position if player falls off plane
 		if (transform.position.y < fallThreshold){
-//			transform.position = startPosition;
-//			Destroy(gameObject);
 			Application.LoadLevel(Application.loadedLevel);
 		}
 			
@@ -151,13 +148,10 @@ public class PlayerController : MonoBehaviour {
 	// return true if player is allowed to jump again
 	// (helps prevent infinite jumping)
 	void OnCollisionStay(Collision col){
-//		Debug.Log (rb.velocity.y);
-//		Debug.Log (col.transform.tag);
-//		if (col.transform.tag == "MeshDiff" || col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || col.transform.tag == "2D" || col.transform.tag == "3D") {
 		if ((rb.velocity.y < 8 && rb.velocity.y > -8) && (col.transform.tag == "MeshDiff" || 
 			col.transform.tag == "ColliderDiff" || col.transform.tag == "Ground" || 
 			col.transform.tag == "2D" || col.transform.tag == "3D" || 
-			col.transform.tag == "Rotatable" || col.transform.tag == "Front" || 
+			col.transform.tag == "Front" || 
 			col.transform.tag == "Left" || col.transform.tag == "Right" || col.transform.tag == "Back" || 
 			col.transform.tag == "RotatePad")) {
 			grounded = true;

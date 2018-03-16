@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour {
 
-//	public float range; // player must be within this range to rotate this object
-//	public GameObject player; // reference to player
-	Behaviour halo; // reference to halo
 	public Vector3 angle; // rotation angle
 	public float duration; // rotation duration
-	public bool showIndicator = false;
 	private int direction = 1;
 	WorldManager worldManager;
 	private Collider[] children;
@@ -62,14 +58,6 @@ public class RotateObject : MonoBehaviour {
 			selfCol.enabled = true;
 		}
 	}
-
-	// indicate range in scene for easier adjustments
-//	void OnDrawGizmosSelected(){
-//		if (showIndicator) {
-//			Gizmos.color = Color.red;
-//			Gizmos.DrawWireSphere (transform.position, range);
-//		}
-//	}
 
 	// rotates object
 	bool rotating = false;
