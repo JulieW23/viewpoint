@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour {
 	private bool grounded = true; // true iff player is not in the air
 	private Vector3 startPosition; // start position of player
 	WorldManager worldManager; // reference to WorldManager
-	private int boxEncounter = 0;
 	Animator player_anim;
 	private bool left, right; // animation direction
 	private bool play = false;
@@ -53,7 +52,6 @@ public class PlayerController : MonoBehaviour {
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
-			boxEncounter = 1;
 			//player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
 		}
 
@@ -107,7 +105,6 @@ public class PlayerController : MonoBehaviour {
 				AudioListener.pause = !AudioListener.pause;
 			}
 		}
-		boxEncounter = 0;
 	}
 	void FixedUpdate() {
 		speed = rb.velocity.y;
@@ -135,9 +132,6 @@ public class PlayerController : MonoBehaviour {
 	}
 	// Turn left with corresponded state
 	void TurnLeft(int state){
-		if (player_anim == null){
-			Debug.Log("it's null");
-		}
 		player_anim.SetInteger("State", state);
 		if (left){ return ;}
 		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
@@ -170,18 +164,7 @@ public class PlayerController : MonoBehaviour {
 		} 
 	}
 
-	void OnCollisionEnter(Collision other) {
-		// turn off hopping when collsion with box
-		if (other.gameObject.CompareTag("Box")){
-			boxEncounter = 1;
-		}
-	}
-	void OnCollisionExit(Collision other) {
-		// turn on hopping back on
-		if (other.gameObject.CompareTag("Box")){
-			boxEncounter = 0;
-		}
-	}
+
 
 	// collecting the coin objects
 	void OnTriggerEnter(Collider other) {
