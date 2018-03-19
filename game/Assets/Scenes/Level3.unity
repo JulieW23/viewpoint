@@ -23685,7 +23685,7 @@ GameObject:
   - component: {fileID: 265858229}
   m_Layer: 0
   m_Name: rotate_1
-  m_TagString: ColliderDiff
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141907,8 +141907,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034128242}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.25448152, y: -0.0018518518, z: 0.12325931}
-  m_LocalScale: {x: 0.0003703705, y: 0.00037037037, z: 0.0003703705}
+  m_LocalPosition: {x: 0.25450015, y: -0.0001699999, z: 0.12080008}
+  m_LocalScale: {x: 0.00037037072, y: 0.00037037037, z: 0.00037037072}
   m_Children:
   - {fileID: 2145980717}
   - {fileID: 1428480390}

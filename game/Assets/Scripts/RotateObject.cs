@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,11 +12,14 @@ public class RotateObject : MonoBehaviour {
 	private Collider[] children;
 	public RotationPad rotationPad;
 	public ParticleSystem indicator;
+	private bool is2D;
 
 	void Start () {
-		worldManager = WorldManager.instance;
+		worldManager = worldManager = WorldManager.instance;
 		children = gameObject.GetComponentsInChildren<Collider> ();
 		indicator.Pause ();
+		is2D = worldManager.mode2d;
+		SwitchPerspective();
 	}
 
 	void Update () {
@@ -30,9 +34,16 @@ public class RotateObject : MonoBehaviour {
 			indicator.Pause ();
 			indicator.Clear();
 		}
+		if (Input.GetButtonDown ("Change Perspective")) {
+			// handle colliders
+			is2D = !is2D;
+			SwitchPerspective();
+		}
+	}
 
-		// handle colliders
-		if (worldManager.mode2d) {
+	void SwitchPerspective(){
+		//Debug.Log("in function:" + worldManager.mode2d);
+		if (is2D) {
 			for (int i = 0; i < children.Length; i++) {
 				if (direction == 1 && children [i].gameObject.tag == "Front") {
 					children [i].enabled = true;
@@ -90,3 +101,5 @@ public class RotateObject : MonoBehaviour {
 		rotating = false;
 	}
 }
+
+
