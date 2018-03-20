@@ -108,29 +108,35 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")){
 			if (Input.GetAxis ("Horizontal") > 0) {
 				transform.position += transform.right * Time.deltaTime * movementSpeed;
+				Debug.Log("turn right!");
 				TurnRight(1);
 			} if (Input.GetAxis ("Horizontal") < 0) {
 				transform.position += -transform.right * Time.deltaTime * movementSpeed;
+				Debug.Log("turn left!");
+				//player_anim.SetInteger("State", 1);
 				TurnLeft(1);
 			} if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 				transform.position += transform.forward * Time.deltaTime * movementSpeed;
-	//			TurnRight(1);
+				//TurnRight(1);
 			} if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 				transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-	//			TurnLeft(1);
+			    //TurnLeft(1);
 			} 
 		}else {
 			// back to idle
 			if (left){
-				TurnLeft(0);
+				//player_anim.SetInteger("State", 0);
+				//TurnLeft(0);
 			}else{
-				TurnRight(0);
+				//player_anim.SetInteger("State", 0);
+				//TurnRight(0);
 			}
 		}
 	}
 	// Turn left with corresponded state
 	void TurnLeft(int state){
 		player_anim.SetInteger("State", state);
+		Debug.Log("state: "+ state);
 		if (left){ return ;}
 		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 		left = true;
@@ -139,6 +145,7 @@ public class PlayerController : MonoBehaviour {
 	// Turn left with corresponded state
 	void TurnRight(int state){
 		player_anim.SetInteger("State", state);
+		Debug.Log("state: "+ state);
 		if (right){ return ;}
 		transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 		left = false;
