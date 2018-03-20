@@ -8876,7 +8876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos3D: {x: -119.8, y: -41.1, z: 344.5}
-  pos2D: {x: 16, y: -40, z: 340}
+  pos2D: {x: 5, y: -40, z: 340}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!4 &428811224 stripped
@@ -10708,6 +10708,7 @@ GameObject:
   - component: {fileID: 1054177289}
   - component: {fileID: 1054177288}
   - component: {fileID: 1054177287}
+  - component: {fileID: 1054177294}
   m_Layer: 0
   m_Name: arch1
   m_TagString: Arch2
@@ -10822,6 +10823,21 @@ Transform:
   m_Father: {fileID: 2018234475}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054177294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054177286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos3D: {x: -104, y: -39.8, z: 407.6}
+  pos2D: {x: 10, y: -39.8, z: 407.6}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!1 &1056384082
 GameObject:
   m_ObjectHideFlags: 0
@@ -12057,7 +12073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos3D: {x: -116.363, y: -41.6, z: 354.8}
-  pos2D: {x: 16, y: -40, z: 350}
+  pos2D: {x: 0, y: -40, z: 350}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!4 &1329245340 stripped
