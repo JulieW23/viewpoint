@@ -2546,7 +2546,7 @@ GameObject:
   - component: {fileID: 1270874880}
   m_Layer: 0
   m_Name: Box084 (1)
-  m_TagString: 2D
+  m_TagString: play
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3472,7 +3472,7 @@ GameObject:
   - component: {fileID: 1773808814}
   m_Layer: 0
   m_Name: Box083 (1)
-  m_TagString: 2D
+  m_TagString: soundButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
