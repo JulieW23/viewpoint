@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour {
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
-			//player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
+			player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
 		}
 
 		if (rb.velocity.y > 8 || rb.velocity.y < -8) {
