@@ -108,28 +108,23 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")){
 			if (Input.GetAxis ("Horizontal") > 0) {
 				transform.position += transform.right * Time.deltaTime * movementSpeed;
-				Debug.Log("turn right!");
 				TurnRight(1);
 			} if (Input.GetAxis ("Horizontal") < 0) {
 				transform.position += -transform.right * Time.deltaTime * movementSpeed;
-				Debug.Log("turn left!");
-				//player_anim.SetInteger("State", 1);
 				TurnLeft(1);
 			} if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 				transform.position += transform.forward * Time.deltaTime * movementSpeed;
-				//TurnRight(1);
+				TurnRight(1);
 			} if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 				transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-			    //TurnLeft(1);
+			    TurnLeft(1);
 			} 
 		}else {
 			// back to idle
 			if (left){
-				//player_anim.SetInteger("State", 0);
-				//TurnLeft(0);
+				TurnLeft(0);
 			}else{
-				//player_anim.SetInteger("State", 0);
-				//TurnRight(0);
+				TurnRight(0);
 			}
 		}
 	}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.87089145, g: 0.8248069, b: 0.85279185, a: 1}
+  m_IndirectSpecularColor: {r: 0.8708387, g: 0.82485753, b: 0.85268784, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4376,10 +4376,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 807405959}
-  - component: {fileID: 807405958}
   - component: {fileID: 807405957}
   - component: {fileID: 807405956}
   - component: {fileID: 807405955}
+  - component: {fileID: 807405958}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -4443,12 +4443,11 @@ Rigidbody:
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95945638832925714, guid: 45b5926760b2345299875cf498f49c7f,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807405954}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8658a1540df23df47af86949770efd20, type: 3}
+  m_Avatar: {fileID: 9000000, guid: aa18d73e9c070b940a4873e12cf7d792, type: 3}
   m_Controller: {fileID: 9100000, guid: 7e8e03d9e930d3f4997acec7b675c84b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -9797,7 +9796,8 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7e8e03d9e930d3f4997acec7b675c84b, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: aa18d73e9c070b940a4873e12cf7d792, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: aa18d73e9c070b940a4873e12cf7d792, type: 3}
   m_IsPrefabParent: 0
 --- !u!4 &2017018587 stripped
