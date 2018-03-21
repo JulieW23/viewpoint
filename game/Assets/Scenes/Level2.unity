@@ -3732,6 +3732,25 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &93820478 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 67e172afda5627c4c80261c4ce5caff0, type: 3}
+  m_PrefabInternal: {fileID: 423617934}
+--- !u!114 &93820479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93820478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos3D: {x: 6.957975, y: -71.1, z: 399.4639}
+  pos2D: {x: 50, y: -71.1, z: 399.4639}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!1001 &105599106
 Prefab:
   m_ObjectHideFlags: 0
@@ -4107,7 +4126,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a9354ad5a3abc994cb4e8f7a36ee7d24, type: 2}
+  - {fileID: 2100000, guid: 15a00050f40899c4b9f41cb5cbfd197f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4459,6 +4478,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos3D: {x: -28.2, y: 64.99959, z: -8.205841}
   pos2D: {x: -15.6, y: 64.99959, z: -8.205841}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
+--- !u!1 &299500749 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: e267b8c5eec1deb489416ffa6ac15f5e, type: 3}
+  m_PrefabInternal: {fileID: 1238364823}
+--- !u!114 &299500750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299500749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos3D: {x: 4, y: -72, z: 287}
+  pos2D: {x: 50, y: -72, z: 287}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!4 &314888361 stripped
@@ -8218,6 +8256,25 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &390078857 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 67e172afda5627c4c80261c4ce5caff0, type: 3}
+  m_PrefabInternal: {fileID: 1373606175}
+--- !u!114 &390078858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390078857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos3D: {x: 9.837111, y: -71.4, z: 293.8}
+  pos2D: {x: 50, y: -71.4, z: 293.8}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!1001 &393533885
 Prefab:
   m_ObjectHideFlags: 0
@@ -8900,7 +8957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos3D: {x: -119.8, y: -41.1, z: 344.5}
-  pos2D: {x: 5, y: -40, z: 340}
+  pos2D: {x: 5, y: -45, z: 340}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!4 &428811224 stripped
@@ -9533,6 +9590,21 @@ MeshCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: aeb1fab4387902c46ad118dffd28d11f, type: 3}
   m_PrefabInternal: {fileID: 551484552}
+--- !u!114 &551484556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551484553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos3D: {x: 15.9, y: -69.61535, z: 275.9}
+  pos2D: {x: 50, y: -69.61535, z: 275.9}
+  timeTakenDuringLerp2D: 0.9
+  timeTakenDuringLerp3D: 1
 --- !u!1 &554996183
 GameObject:
   m_ObjectHideFlags: 0
@@ -9593,7 +9665,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a76941f2d3f9b1d49ad617b63da372ff, type: 2}
+  - {fileID: 2100000, guid: 15a00050f40899c4b9f41cb5cbfd197f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10971,7 +11043,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a76941f2d3f9b1d49ad617b63da372ff, type: 2}
+  - {fileID: 2100000, guid: 15a00050f40899c4b9f41cb5cbfd197f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12119,7 +12191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos3D: {x: -116.363, y: -41.6, z: 354.8}
-  pos2D: {x: 0, y: -40, z: 350}
+  pos2D: {x: 0, y: -45, z: 350}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!4 &1329245340 stripped
@@ -12792,7 +12864,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a76941f2d3f9b1d49ad617b63da372ff, type: 2}
+  - {fileID: 2100000, guid: 15a00050f40899c4b9f41cb5cbfd197f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
