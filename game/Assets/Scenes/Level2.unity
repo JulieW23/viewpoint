@@ -10696,9 +10696,9 @@ GameObject:
   - component: {fileID: 1054177291}
   - component: {fileID: 1054177290}
   - component: {fileID: 1054177289}
-  - component: {fileID: 1054177288}
   - component: {fileID: 1054177287}
   - component: {fileID: 1054177294}
+  - component: {fileID: 1054177288}
   m_Layer: 0
   m_Name: arch1
   m_TagString: Arch2
@@ -10718,8 +10718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minCoins: 3
---- !u!135 &1054177288
-SphereCollider:
+--- !u!65 &1054177288
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -10728,8 +10728,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.9610767
-  m_Center: {x: 0.035173558, y: 1.477703, z: -0.13543692}
+  m_Size: {x: 10.973881, y: 2.627376, z: 1.3498367}
+  m_Center: {x: 0.24421374, y: 1.3236012, z: 0}
 --- !u!122 &1054177289
 Halo:
   m_ObjectHideFlags: 0
@@ -10739,8 +10739,8 @@ Halo:
   m_Enabled: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4292730117
-  m_Size: 15
+    rgba: 4283984595
+  m_Size: 30
 --- !u!111 &1054177290
 Animation:
   m_ObjectHideFlags: 0
@@ -10806,8 +10806,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1054177286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -104, y: -39.8, z: 407.6}
-  m_LocalScale: {x: 4.6307497, y: 4.7560596, z: 3.5630798}
+  m_LocalPosition: {x: -102, y: -41.1, z: 403}
+  m_LocalScale: {x: 13, y: 10, z: 10}
   m_Children:
   - {fileID: 3868942}
   m_Father: {fileID: 2018234475}
