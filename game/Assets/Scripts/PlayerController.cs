@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour {
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
-			//player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
+			player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
 		}
 
 		if (rb.velocity.y > 8 || rb.velocity.y < -8) {
@@ -114,10 +114,10 @@ public class PlayerController : MonoBehaviour {
 				TurnLeft(1);
 			} if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
 				transform.position += transform.forward * Time.deltaTime * movementSpeed;
-	//			TurnRight(1);
+				TurnRight(1);
 			} if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
 				transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-	//			TurnLeft(1);
+			    TurnLeft(1);
 			} 
 		}else {
 			// back to idle
@@ -188,6 +188,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (other.gameObject.CompareTag("play")) {
+			Debug.Log("touch play");
 			play = true;
 		}
 
