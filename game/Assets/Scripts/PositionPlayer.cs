@@ -15,7 +15,7 @@ public class PositionPlayer : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider collision){
-		if (collision.gameObject.name == "Player") {
+		if (collision.gameObject.tag == "Player") {
 			GameObject player = collision.gameObject;
 //			Debug.Log ("move!");
 			if (x != 0) {
