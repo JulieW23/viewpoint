@@ -153,7 +153,8 @@ public class PlayerController : MonoBehaviour {
 			col.transform.tag == "2D" || col.transform.tag == "3D" || 
 			col.transform.tag == "Front" || 
 			col.transform.tag == "Left" || col.transform.tag == "Right" || col.transform.tag == "Back" || 
-			col.transform.tag == "RotatePad")) {
+			col.transform.tag == "RotatePad" || col.transform.tag == "play" || col.transform.tag == "soundButton" ||
+			col.transform.tag == "quitButton")) {
 			grounded = true;
 			// Debug.Log ("Grounded again");
 		} 

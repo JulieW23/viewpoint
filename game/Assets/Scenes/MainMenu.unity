@@ -2634,7 +2634,7 @@ GameObject:
   - component: {fileID: 1363966857}
   m_Layer: 0
   m_Name: Box145 (1)
-  m_TagString: 2D
+  m_TagString: quitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
