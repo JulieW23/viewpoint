@@ -131,7 +131,6 @@ public class PlayerController : MonoBehaviour {
 	// Turn left with corresponded state
 	void TurnLeft(int state){
 		player_anim.SetInteger("State", state);
-		Debug.Log("state: "+ state);
 		if (left){ return ;}
 		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 		left = true;
@@ -140,7 +139,6 @@ public class PlayerController : MonoBehaviour {
 	// Turn left with corresponded state
 	void TurnRight(int state){
 		player_anim.SetInteger("State", state);
-		Debug.Log("state: "+ state);
 		if (right){ return ;}
 		transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 		left = false;
@@ -190,6 +188,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (other.gameObject.CompareTag("play")) {
+			Debug.Log("touch play");
 			play = true;
 		}
 
