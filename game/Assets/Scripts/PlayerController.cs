@@ -157,7 +157,26 @@ public class PlayerController : MonoBehaviour {
 			col.transform.tag == "quitButton")) {
 			grounded = true;
 			// Debug.Log ("Grounded again");
-		} 
+		}
+
+		if (col.gameObject.CompareTag("play")) {
+			Debug.Log("touch play");
+			play = true;
+			sound = false;
+			quit = false;
+		}
+
+		if (col.gameObject.CompareTag ("soundButton")) {
+			play = false;
+			sound = true;
+			quit = false;
+		}
+
+		if (col.gameObject.CompareTag ("quitButton")) {
+			play = false;
+			sound = false;
+			quit = true;
+		}
 	}
 
 
