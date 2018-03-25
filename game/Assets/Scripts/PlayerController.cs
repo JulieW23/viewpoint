@@ -106,18 +106,28 @@ public class PlayerController : MonoBehaviour {
 	}
 	void FixedUpdate() {
 		// player movement
-		if (Input.GetAxis ("Horizontal") > 0) {
-			transform.position += transform.right * Time.deltaTime * movementSpeed;
-			TurnRight(1);
-		} else if (Input.GetAxis ("Horizontal") < 0) {
-			transform.position += -transform.right * Time.deltaTime * movementSpeed;
-			TurnLeft(1);
-		} else if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
-			transform.position += transform.forward * Time.deltaTime * movementSpeed;
-			TurnRight(1);
-		} else if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
-			transform.position += -transform.forward * Time.deltaTime * movementSpeed;
-			TurnLeft(1);
+		if ((Input.GetAxis ("Horizontal") > 0)||(Input.GetAxis ("Horizontal") < 0)||(Input.GetAxis ("Vertical") > 0)|| (Input.GetAxis ("Vertical") < 0)) {
+			if (Input.GetAxis ("Horizontal") > 0) {
+				transform.position += transform.right * Time.deltaTime * movementSpeed;
+				TurnRight(1);
+			} if (Input.GetAxis ("Horizontal") < 0) {
+				transform.position += -transform.right * Time.deltaTime * movementSpeed;
+				TurnLeft(1);
+			} if (Input.GetAxis ("Vertical") > 0 && !worldManager.mode2d) {
+				transform.position += transform.forward * Time.deltaTime * movementSpeed;
+				if (left){
+					TurnLeft(1);
+				}else{
+					TurnRight(1);
+				}	
+			} if (Input.GetAxis ("Vertical") < 0 && !worldManager.mode2d) {
+				transform.position += -transform.forward * Time.deltaTime * movementSpeed;
+				if (left){
+					TurnLeft(1);
+				}else{
+					TurnRight(1);
+				}
+			}
 		} else {
 			// back to idle
 			if (left){
@@ -130,6 +140,7 @@ public class PlayerController : MonoBehaviour {
 	// Turn left with corresponded state
 	void TurnLeft(int state){
 		player_anim.SetInteger("State", state);
+		Debug.Log("turn left");
 		if (left){ return ;}
 		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 		left = true;
@@ -138,6 +149,7 @@ public class PlayerController : MonoBehaviour {
 	// Turn left with corresponded state
 	void TurnRight(int state){
 		player_anim.SetInteger("State", state);
+		Debug.Log("turn right");
 		if (right){ return ;}
 		transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 		left = false;
