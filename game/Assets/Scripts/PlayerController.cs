@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log("has animator!");
 		}
 		right = true;
+		Time.timeScale = 1f;
 	}
 
 	void Update () {
