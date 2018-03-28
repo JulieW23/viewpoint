@@ -20,6 +20,9 @@ public class WorldManager : MonoBehaviour {
 	// array of all objects that need mesh altered when view switches
 	private GameObject[] changeMesh;
 
+	// array of all renderers
+	private MeshRenderer[] rend;
+
 	void Awake(){
 		// make sure there is only once instance of WorldManager
 		if (instance != null) {
@@ -35,8 +38,14 @@ public class WorldManager : MonoBehaviour {
 		changeCol = GameObject.FindGameObjectsWithTag("ColliderDiff");
 		changeMesh = GameObject.FindGameObjectsWithTag ("MeshDiff");
 
+		// get all mesh renderers
+		rend = Resources.FindObjectsOfTypeAll<MeshRenderer>();
+
 		// use the correct colliders
 		if (!mode2d) { //3d
+			foreach (MeshRenderer r in rend){
+				r.receiveShadows = true;
+			}
 			// ***** COLLIDER DIFF *****
 			// for all objects that have different colliders in each mode
 			foreach (GameObject obj in changeCol) {
@@ -83,6 +92,9 @@ public class WorldManager : MonoBehaviour {
 			}
 				
 		} else if (mode2d) { //2d
+			foreach (MeshRenderer r in rend){
+				r.receiveShadows = false;
+			}
 			// ***** COLLIDER DIFF *****
 			foreach (GameObject obj in changeCol) {
 				Collider col = obj.GetComponent<Collider> ();
@@ -133,6 +145,10 @@ public class WorldManager : MonoBehaviour {
 			FindObjectOfType<AudioManager>().Play("SwitchPerspective");
 			// update mode
 			mode2d = !mode2d;
+
+			foreach (MeshRenderer r in rend){
+				r.receiveShadows = !r.receiveShadows;
+			}
 
 			// colliders
 			foreach (GameObject obj in changeCol) {

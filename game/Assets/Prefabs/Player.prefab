@@ -460,7 +460,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1615758020720644}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -494,7 +494,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1122614073520682}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -528,7 +528,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1136350527967822}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -562,7 +562,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1993296480981650}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -596,7 +596,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1239285842702038}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -630,7 +630,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1317457679147506}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -664,7 +664,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1606442022440824}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -698,7 +698,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1888447283461032}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -732,7 +732,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1978656632431632}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -766,7 +766,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1798761124730608}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -948,10 +948,11 @@ MonoBehaviour:
   jumpForce: 57
   fallForce: 8.5
   lowJumpForce: 10
-  speed: 0
   fallThreshold: -200
   hopHeight: 0.2
   countText: {fileID: 0}
+  orbLeftText: {fileID: 0}
+  orbsToPass: 2
 --- !u!124 &124394593430821200
 Behaviour:
   m_ObjectHideFlags: 1
