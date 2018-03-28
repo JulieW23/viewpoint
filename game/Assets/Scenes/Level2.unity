@@ -369,7 +369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 59505828}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -103.0392, y: -39.87, z: 373}
+  m_LocalPosition: {x: -103.0392, y: -40.2, z: 373}
   m_LocalScale: {x: 1, y: 1.1290718, z: 0.7431805}
   m_Children: []
   m_Father: {fileID: 2018571940}
@@ -387,8 +387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos3D: {x: -103.0392, y: -39.87, z: 372.32}
-  pos2D: {x: 16.2, y: -39.87, z: 372.32}
+  pos3D: {x: -103.0392, y: -40.2, z: 372.32}
+  pos2D: {x: -5, y: -40.2, z: 372.32}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!65 &59505831
@@ -38732,7 +38732,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1515565265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -102, y: -41.1, z: 403}
+  m_LocalPosition: {x: -102, y: -41, z: 403}
   m_LocalScale: {x: 13, y: 10, z: 10}
   m_Children:
   - {fileID: 497179621}
@@ -38764,8 +38764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos3D: {x: -104, y: -39.8, z: 407.6}
-  pos2D: {x: 10, y: -39.8, z: 407.6}
+  pos3D: {x: -102, y: -41, z: 403}
+  pos2D: {x: -5.1, y: -41, z: 403}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!114 &1515565269
@@ -43118,7 +43118,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1735237264}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 108.95911, y: -45.00031, z: 186.79382}
+  m_LocalPosition: {x: 108.95911, y: -45.00031, z: 187.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 339309195}
@@ -43138,8 +43138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d955ab3ff0da43fa9c814eb8196e5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos3D: {x: 108.9591, y: -45.00031, z: 186.7938}
-  pos2D: {x: 9.4, y: -45.00031, z: 186.7938}
+  pos3D: {x: 108.9591, y: -45.00031, z: 187.1}
+  pos2D: {x: 9.4, y: -45.00031, z: 187.1}
   timeTakenDuringLerp2D: 0.9
   timeTakenDuringLerp3D: 1
 --- !u!65 &1735237267
