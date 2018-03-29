@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7524059, g: 0.60415524, b: 0.5860901, a: 1}
+  m_IndirectSpecularColor: {r: 0.7527401, g: 0.6041168, b: 0.5861454, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3732,6 +3732,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4424191360617772, guid: be1eb2fb6185e7e45ae2da6fa4832d92, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3769,6 +3774,21 @@ Prefab:
       propertyPath: sounds.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 3211906bd0256d54ab05df358e7092c2, type: 3}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[4].name
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 450e81d5962ee244f93edfb7bf31ba5f, type: 3}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be1eb2fb6185e7e45ae2da6fa4832d92, type: 2}
   m_IsPrefabParent: 0

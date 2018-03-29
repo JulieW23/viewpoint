@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour {
 			rb.velocity = Vector3.up * jumpForce;
 			grounded = false;
 			player_anim.SetInteger("State", 2); // jumping animation (need back to idle)
+			FindObjectOfType<AudioManager>().Play("Jump");
 		}
 
 		if (rb.velocity.y > 8 || rb.velocity.y < -8) {
@@ -106,7 +107,8 @@ public class PlayerController : MonoBehaviour {
 	}
 	void FixedUpdate() {
 		// player movement
-		if ((Input.GetAxis ("Horizontal") > 0)||(Input.GetAxis ("Horizontal") < 0)||(Input.GetAxis ("Vertical") > 0)|| (Input.GetAxis ("Vertical") < 0)) {
+		if (Input.GetAxis ("Horizontal") != 0 ||(Input.GetAxis ("Vertical") != 0)) {
+			//FindObjectOfType<AudioManager>().Play("Walk");
 			if (Input.GetAxis ("Horizontal") > 0) {
 				transform.position += transform.right * Time.deltaTime * movementSpeed;
 				TurnRight(1);
@@ -167,7 +169,6 @@ public class PlayerController : MonoBehaviour {
 			col.transform.tag == "RotatePad" || col.transform.tag == "play" || col.transform.tag == "soundButton" ||
 			col.transform.tag == "quitButton")) {
 			grounded = true;
-			// Debug.Log ("Grounded again");
 		}
 
 		if (col.gameObject.CompareTag("play")) {
