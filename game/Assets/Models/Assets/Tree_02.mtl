@@ -1,0 +1,42 @@
+newmtl lambert2SG
+illum 4
+Kd 0.17 0.35 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.06 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert7SG
+illum 4
+Kd 0.13 0.01 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__lambert2SG1
+illum 4
+Kd 0.17 0.35 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__lambert2SG2
+illum 4
+Kd 0.17 0.35 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__lambert5SG
+illum 4
+Kd 0.22 0.17 0.15
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert5SG2
+illum 4
+Kd 0.33 0.29 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00

@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 9830b318a0580bf4fb16f755ffb3be6d
+timeCreated: 1522644622
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: group15_pasted__pasted__pasted__pasted__pCylinder2
+    100002: group15_pasted__pasted__pasted__pasted__pCylinder3
+    100004: group15_pasted__pasted__pasted__pCylinder2
+    100006: group15_pasted__pasted__pasted__pCylinder3
+    100008: group15_pasted__pasted__pasted__pCylinder4
+    100010: group15_pasted__pasted__pCylinder2
+    100012: group15_pasted__pasted__pCylinder3
+    100014: group15_pasted__pasted__pCylinder4
+    100016: group15_pCylinder2
+    100018: pasted__pCylinder2_group15
+    100020: //RootNode
+    100022: group22_group15_pasted__pasted__pasted__pasted__pCylinder2
+    100024: group22_group15_pasted__pasted__pasted__pasted__pCylinder3
+    100026: group22_group15_pasted__pasted__pasted__pCylinder2
+    100028: group22_group15_pasted__pasted__pasted__pCylinder3
+    100030: group22_group15_pasted__pasted__pasted__pCylinder4
+    100032: group22_group15_pasted__pasted__pCylinder2
+    100034: group22_group15_pasted__pasted__pCylinder3
+    100036: group22_group15_pasted__pasted__pCylinder4
+    100038: group22_group15_pCylinder2
+    100040: pasted__pCylinder2_group22_group15
+    400000: group15_pasted__pasted__pasted__pasted__pCylinder2
+    400002: group15_pasted__pasted__pasted__pasted__pCylinder3
+    400004: group15_pasted__pasted__pasted__pCylinder2
+    400006: group15_pasted__pasted__pasted__pCylinder3
+    400008: group15_pasted__pasted__pasted__pCylinder4
+    400010: group15_pasted__pasted__pCylinder2
+    400012: group15_pasted__pasted__pCylinder3
+    400014: group15_pasted__pasted__pCylinder4
+    400016: group15_pCylinder2
+    400018: pasted__pCylinder2_group15
+    400020: //RootNode
+    400022: group22_group15_pasted__pasted__pasted__pasted__pCylinder2
+    400024: group22_group15_pasted__pasted__pasted__pasted__pCylinder3
+    400026: group22_group15_pasted__pasted__pasted__pCylinder2
+    400028: group22_group15_pasted__pasted__pasted__pCylinder3
+    400030: group22_group15_pasted__pasted__pasted__pCylinder4
+    400032: group22_group15_pasted__pasted__pCylinder2
+    400034: group22_group15_pasted__pasted__pCylinder3
+    400036: group22_group15_pasted__pasted__pCylinder4
+    400038: group22_group15_pCylinder2
+    400040: pasted__pCylinder2_group22_group15
+    2100000: pasted__pasted__pasted__pasted__lambert5SG3
+    2100002: pasted__pasted__pasted__pasted__lambert5SG2
+    2100004: pasted__pasted__pasted__lambert5SG3
+    2100006: pasted__pasted__pasted__lambert5SG2
+    2100008: pasted__pasted__pasted__lambert5SG4
+    2100010: pasted__pasted__lambert5SG3
+    2100012: pasted__pasted__lambert5SG2
+    2100014: pasted__pasted__lambert5SG1
+    2100016: lambert5SG
+    2100018: pasted__lambert5SG1
+    2300000: group15_pasted__pasted__pasted__pasted__pCylinder2
+    2300002: group15_pasted__pasted__pasted__pasted__pCylinder3
+    2300004: group15_pasted__pasted__pasted__pCylinder2
+    2300006: group15_pasted__pasted__pasted__pCylinder3
+    2300008: group15_pasted__pasted__pasted__pCylinder4
+    2300010: group15_pasted__pasted__pCylinder2
+    2300012: group15_pasted__pasted__pCylinder3
+    2300014: group15_pasted__pasted__pCylinder4
+    2300016: group15_pCylinder2
+    2300018: pasted__pCylinder2_group15
+    2300020: group22_group15_pasted__pasted__pasted__pasted__pCylinder2
+    2300022: group22_group15_pasted__pasted__pasted__pasted__pCylinder3
+    2300024: group22_group15_pasted__pasted__pasted__pCylinder2
+    2300026: group22_group15_pasted__pasted__pasted__pCylinder3
+    2300028: group22_group15_pasted__pasted__pasted__pCylinder4
+    2300030: group22_group15_pasted__pasted__pCylinder2
+    2300032: group22_group15_pasted__pasted__pCylinder3
+    2300034: group22_group15_pasted__pasted__pCylinder4
+    2300036: group22_group15_pCylinder2
+    2300038: pasted__pCylinder2_group22_group15
+    3300000: group15_pasted__pasted__pasted__pasted__pCylinder2
+    3300002: group15_pasted__pasted__pasted__pasted__pCylinder3
+    3300004: group15_pasted__pasted__pasted__pCylinder2
+    3300006: group15_pasted__pasted__pasted__pCylinder3
+    3300008: group15_pasted__pasted__pasted__pCylinder4
+    3300010: group15_pasted__pasted__pCylinder2
+    3300012: group15_pasted__pasted__pCylinder3
+    3300014: group15_pasted__pasted__pCylinder4
+    3300016: group15_pCylinder2
+    3300018: pasted__pCylinder2_group15
+    3300020: group22_group15_pasted__pasted__pasted__pasted__pCylinder2
+    3300022: group22_group15_pasted__pasted__pasted__pasted__pCylinder3
+    3300024: group22_group15_pasted__pasted__pasted__pCylinder2
+    3300026: group22_group15_pasted__pasted__pasted__pCylinder3
+    3300028: group22_group15_pasted__pasted__pasted__pCylinder4
+    3300030: group22_group15_pasted__pasted__pCylinder2
+    3300032: group22_group15_pasted__pasted__pCylinder3
+    3300034: group22_group15_pasted__pasted__pCylinder4
+    3300036: group22_group15_pCylinder2
+    3300038: pasted__pCylinder2_group22_group15
+    4300000: group15_pasted__pasted__pasted__pasted__pCylinder2
+    4300002: group15_pasted__pasted__pasted__pasted__pCylinder3
+    4300004: group15_pasted__pasted__pasted__pCylinder2
+    4300006: group15_pasted__pasted__pasted__pCylinder3
+    4300008: group15_pasted__pasted__pasted__pCylinder4
+    4300010: group15_pasted__pasted__pCylinder2
+    4300012: group15_pasted__pasted__pCylinder3
+    4300014: group15_pasted__pasted__pCylinder4
+    4300016: group15_pCylinder2
+    4300018: pasted__pCylinder2_group15
+    4300020: group22_group15_pasted__pasted__pasted__pasted__pCylinder2
+    4300022: group22_group15_pasted__pasted__pasted__pasted__pCylinder3
+    4300024: group22_group15_pasted__pasted__pasted__pCylinder2
+    4300026: group22_group15_pasted__pasted__pasted__pCylinder3
+    4300028: group22_group15_pasted__pasted__pasted__pCylinder4
+    4300030: group22_group15_pasted__pasted__pCylinder2
+    4300032: group22_group15_pasted__pasted__pCylinder3
+    4300034: group22_group15_pasted__pasted__pCylinder4
+    4300036: group22_group15_pCylinder2
+    4300038: pasted__pCylinder2_group22_group15
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
