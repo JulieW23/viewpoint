@@ -226,6 +226,11 @@ public class PlayerController : MonoBehaviour {
 			orbsToPass = 1;
 		}
 
+		if (coinCount >= orbsToPass && other.gameObject.CompareTag("Arch3")) {
+			Debug.Log ("player touch arch");
+			SceneManager.LoadScene ("Ending", LoadSceneMode.Single);
+		}
+
 		if (other.gameObject.CompareTag("play")) {
 			Debug.Log("touch play");
 			play = true;
