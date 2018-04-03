@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour {
 	private bool quit = false;
 	private GameObject soundLight;
 	private Behaviour soundPointLight;
+	private bool isJoystickPressed = false;
 
 	void Start() {
 		worldManager = WorldManager.instance; // set the reference to WorldManager instance
@@ -48,6 +49,12 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update () {
+		// Dynamic friction handling
+		if (Input.GetButton ("Horizontal") || Input.GetButton("Vertical") || Input.GetButtonDown("Jump")) {
+			isJoystickPressed = true;
+		} else {
+			isJoystickPressed = false;
+		}
 		// jump
 		if (grounded && Input.GetButtonDown("Jump")) {
 			rb.velocity = Vector3.up * jumpForce;
@@ -231,6 +238,23 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.CompareTag ("quitButton")) {
 			quit = true;
 		}
+
+		if (isJoystickPressed) {
+			// minimize friction
+			other.material.staticFriction = 0;
+			other.sharedMaterial.staticFriction = 0;
+			other.material.dynamicFriction = 0;
+			other.sharedMaterial.dynamicFriction = 0;
+			other.material.frictionCombine = PhysicMaterialCombine.Minimum;
+			other.sharedMaterial.frictionCombine = PhysicMaterialCombine.Minimum;
+		} else {
+			other.material.staticFriction = 2;
+			other.sharedMaterial.staticFriction = 2;
+			other.material.dynamicFriction = 10;
+			other.sharedMaterial.dynamicFriction = 10;
+			other.material.frictionCombine = PhysicMaterialCombine.Average;
+			other.sharedMaterial.frictionCombine = PhysicMaterialCombine.Average;
+		}
 	}
 
 	void OnTriggerExit(Collider other) {
@@ -245,6 +269,14 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.CompareTag("quitButton")) {
 			quit = false;
 		}
+
+		// Restores the friction
+		other.material.staticFriction = 2;
+		other.sharedMaterial.staticFriction = 2;
+		other.material.dynamicFriction = 10;
+		other.sharedMaterial.dynamicFriction = 10;
+		other.material.frictionCombine = PhysicMaterialCombine.Average;
+		other.sharedMaterial.frictionCombine = PhysicMaterialCombine.Average;
 	}
 
 	void SetCountText(){
