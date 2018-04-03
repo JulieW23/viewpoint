@@ -27,6 +27,7 @@ TagManager:
   - audioSource
   - Arch2
   - NewArch
+  - Arch3
   layers:
   - Default
   - TransparentFX
