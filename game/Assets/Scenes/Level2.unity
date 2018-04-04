@@ -39280,6 +39280,11 @@ Prefab:
       propertyPath: orbLeftText
       value: 
       objectReference: {fileID: 772742305}
+    - target: {fileID: 136109589107323274, guid: dfaba739603b3f7409a30cc90e9728a3,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 5.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfaba739603b3f7409a30cc90e9728a3, type: 2}
   m_IsPrefabParent: 0
