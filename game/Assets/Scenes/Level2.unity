@@ -39374,6 +39374,11 @@ Prefab:
       propertyPath: m_Center.y
       value: 5.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114522285986242310, guid: dfaba739603b3f7409a30cc90e9728a3,
+        type: 2}
+      propertyPath: orbsToPass
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfaba739603b3f7409a30cc90e9728a3, type: 2}
   m_IsPrefabParent: 0
@@ -79333,7 +79338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101908cd6b16b4943b2aa2bdd5e8611e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCoins: 3
+  minCoins: 5
 --- !u!122 &1515565270
 Halo:
   m_ObjectHideFlags: 0
