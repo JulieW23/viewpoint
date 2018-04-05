@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5186308, g: 0.31840965, b: 0.29784715, a: 1}
+  m_IndirectSpecularColor: {r: 0.51823723, g: 0.31821465, b: 0.29778874, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3981,7 +3981,27 @@ Prefab:
     - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
         type: 2}
       propertyPath: sounds.Array.data[4].volume
-      value: 0.03
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[0].loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045055307984068, guid: be1eb2fb6185e7e45ae2da6fa4832d92,
+        type: 2}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be1eb2fb6185e7e45ae2da6fa4832d92, type: 2}
@@ -5816,26 +5836,6 @@ Prefab:
       propertyPath: orbLeftText
       value: 
       objectReference: {fileID: 190735713}
-    - target: {fileID: 20336603012692966, guid: dfaba739603b3f7409a30cc90e9728a3,
-        type: 2}
-      propertyPath: m_RenderingPath
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 20336603012692966, guid: dfaba739603b3f7409a30cc90e9728a3,
-        type: 2}
-      propertyPath: m_AllowMSAA
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20336603012692966, guid: dfaba739603b3f7409a30cc90e9728a3,
-        type: 2}
-      propertyPath: m_HDR
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 136109589107323274, guid: dfaba739603b3f7409a30cc90e9728a3,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 5.9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfaba739603b3f7409a30cc90e9728a3, type: 2}
   m_IsPrefabParent: 0
@@ -13493,6 +13493,51 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114603764407716160, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114603764407716160, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023330974546256, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023330974546256, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224324630396296432, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -86.14313
+      objectReference: {fileID: 0}
+    - target: {fileID: 224917086855494836, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -46.143127
+      objectReference: {fileID: 0}
+    - target: {fileID: 224324630396296432, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 224917086855494836, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023330974546256, guid: b91e63d81d96cb0488304d9ac746f1e5,
+        type: 2}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b91e63d81d96cb0488304d9ac746f1e5, type: 2}
